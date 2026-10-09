@@ -8,7 +8,7 @@ Sigue siempre el PLAYBOOK: stacks (Tier 1 / Tier 2), cómo se conecta todo, fluj
 
 @PLAYBOOK.md
 
-> Nota: donde el PLAYBOOK habla de la carpeta `agentes/`, los roles están instalados como skills en `.claude/skills/`.
+> Nota: donde el PLAYBOOK habla de la carpeta `agentes/`, los roles están instalados como skills en `.claude/skills/`. La versión resumida del manual también está disponible como skill: `playbook-webs-premium`.
 
 ## El equipo (skills en `.claude/skills/`)
 
