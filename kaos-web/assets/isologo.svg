@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-label="Isologo KAOS Agency">
+  <!-- Marca KAOS reinterpretada en vector recolorable (currentColor).
+       TODO: el cliente puede sustituir este SVG por el vector oficial del isologo. -->
+  <g fill="currentColor">
+    <rect x="16" y="111" width="190" height="27" rx="1.5"/>
+    <polygon points="60,84 80,101 206,45 186,29"/>
+    <polygon points="16,70 38,57 102,109 80,123"/>
+  </g>
+</svg>
