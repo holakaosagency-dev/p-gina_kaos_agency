@@ -21,7 +21,7 @@ Registro de los archivos de la web que se van recopilando. Las rutas son provisi
 
 ## Portfolio — mockups de perfiles de Instagram (iPhone)
 
-Todos a 970×2000 en WebP. Cuentas gestionadas por la agencia (en todas aparece "Le siguen … agency.kaos").
+WebP con fondo transparente, 970×2000 (salvo el de Jehosua: 1601×2000, iPhone en perspectiva). Cuentas gestionadas por la agencia (en todas aparece "Le siguen … agency.kaos").
 
 | Archivo | Cuenta | Qué es |
 |---|---|---|
@@ -30,13 +30,17 @@ Todos a 970×2000 en WebP. Cuentas gestionadas por la agencia (en todas aparece 
 | `assets/img/portfolio/ig-cordobamia-market.webp` | @cordobamia.market | Market de moda, artesanía y diseño en Córdoba |
 | `assets/img/portfolio/ig-darss.webp` | @darss.one | DARSS, marca de ropa pintada a mano |
 | `assets/img/portfolio/ig-debodas.webp` | @debodas_ | Debodas, eventos y detalles de boda (Málaga) |
+| `assets/img/portfolio/ig-jehosua-vogele.webp` | @jehosuavogele | Jehosua Vögele, hair & makeup artist (16 mil). Mockup inclinado, ideal para hero o destacado |
+| `assets/img/portfolio/ig-loca-burger.webp` | @loca_jerez | LOCA Burger, hamburguesería en Jerez |
+| `assets/img/portfolio/ig-palm-tribe.webp` | @palm.tribe | Palm Tribe, trajes y complementos de flamenca (19,5 mil, verificada) |
+| `assets/img/portfolio/ig-torrijas-de-la-yaya.webp` | @lastorrijasdelayaya | Las Torrijas de la Yaya, torrijas artesanas en Sevilla |
 
 ## Retratos
 
 | Archivo | Qué es | Notas |
 |---|---|---|
 | `assets/img/personas/retrato-celia-zanon.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Celia Zanón (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
-| `assets/img/personas/retrato-2.jpg` | Retrato en círculo, 1125×2000 | Formato story con fondo desenfocado. Pendiente: nombre y uso (¿equipo o testimonio?) |
+| `assets/img/personas/retrato-jehosua-vogele.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Jehosua Vögele (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
 
 ## Colores detectados
 
