@@ -52,6 +52,25 @@ Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pe
 | `assets/img/equipo/equipo-2.jpg` | Chico de frente con brazos cruzados; K del isotipo en el pecho |
 | `assets/img/equipo/equipo-3.jpg` | Chica de frente con brazos cruzados, gesto divertido; K en el pecho |
 
+## Raíz del sitio
+
+| Archivo | Qué es | Pendientes (TODO) |
+|---|---|---|
+| `.htaccess` | Config para Hostinger/Apache: caché (HTML/CSS/JS revalidan siempre, imágenes 1 mes, fuentes 1 año), gzip, MIME, cabeceras de seguridad básicas, página 404 | Descomentar la redirección a HTTPS cuando el dominio tenga SSL |
+| `favicon.svg` | K crema sobre cuadrado verde redondeado | También se usa como `apple-touch-icon`, pero iOS no admite SVG ahí: falta un PNG de 180×180 |
+| `404.html` | "Puro caos." Página de error con botón de vuelta al inicio. `noindex` | — |
+| `aviso-legal.html` | Aviso legal LSSI-CE | Razón social, NIF/CIF y domicilio |
+| `contacto.html` | Contacto: email, teléfono, redes, formulario EmailJS (nombre, email, teléfono, servicio, mensaje, privacidad) y mapa de Google | Teléfono real, dirección, ubicación del mapa (ahora Sevilla genérico) |
+
+Estructura común de las páginas: nav (Servicios, Proyectos, Manifiesto, Equipo, Contacto), footer, WhatsApp flotante, volver arriba y banner de cookies. Google Fonts: Fraunces + Space Grotesk. Dominio: `holakaosagency.com`.
+
+Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 000` y WhatsApp `34XXXXXXXXX`.
+
+### Archivos que el HTML enlaza y aún no tengo
+
+- `index.html`, `servicios.html`, `proyectos.html`, `manifiesto.html`, `politica-privacidad.html`, `politica-cookies.html`
+- `assets/img/brand/kaos-lifestyle.png` (foto de "papelería de marca" en contacto y como imagen para redes). Probablemente es el mockup de la libreta que tengo como `assets/img/mockup-libreta-kaos.webp`: confirmar y unificar ruta
+
 ## CSS
 
 Orden de carga recomendado: `variables.css` → `main.css` → `components.css`.
