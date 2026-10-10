@@ -73,6 +73,9 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 | `js/contact.js` | Formulario de contacto con EmailJS: validación en tiempo real, estado "Enviando…", mensajes de éxito/error con WhatsApp de respaldo, evento `generate_lead` en GA | **Pendiente:** `PUBLIC_KEY`, `SERVICE_ID`, `TEMPLATE_ID` de EmailJS + script del SDK de EmailJS en el HTML. Usa `KAOS.WA_URL` (definido en otro JS aún no recibido) |
 | `js/counters.js` | Contadores que suben de 0 al valor al entrar en pantalla (formato es-ES). Sin animación si hay movimiento reducido | Markup `[data-counter]` |
 | `js/filters.js` | Filtro del portfolio por categoría (en `proyectos.html`) | `[data-filters]`, `[data-filter]`, `[data-work-grid]`, `[data-cats]` |
+| `js/main.js` | Núcleo: splash/loader (máx. 1,5 s, solo home), nav sólido al hacer scroll, hamburguesa, scroll suave a anclas, volver arriba, barra de progreso, reveals on scroll, word reveal del hero, nav activo por sección, botones magnéticos, año dinámico. Define `KAOS.WA_URL`. Cada parte va protegida: si una falla, el resto sigue | Enlace de WhatsApp con `[data-wa]` en el HTML; si no existe usa el relleno `https://wa.me/34XXXXXXXXX` |
+| `js/modals.js` | Ventana de caso de estudio: imagen, categoría, título, descripción, resultados y botón. Cierre con ✕, ESC o clic fuera; devuelve el foco al cerrar | Disparadores `[data-modal-open]` con `data-modal-*`. Resultados en formato `valor::etiqueta\|valor::etiqueta` |
+| `js/lightbox.js` | Galería a pantalla completa del portfolio: flechas, teclado y cierre con ESC o clic fuera. Hace accesibles con teclado los elementos que la abren | Elementos `[data-lightbox]` (con `data-full`, `data-title`, `data-desc`) y contenedor `[data-lightbox-stage]` |
 
 ## Sistema de diseño (de `variables.css`)
 
@@ -86,7 +89,8 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 ## Pistas sobre lo que falta (según el CSS)
 
 - Páginas: inicio (hero, marquesina, servicios, métricas, equipo, testimonios, CTA), `servicios.html`, `proyectos.html`, contacto con formulario, páginas legales (incluida política de cookies)
-- JS aún no recibido para: splash, nav al hacer scroll y menú móvil, barra de progreso, reveal y word reveal, modal, lightbox, volver arriba y la URL de WhatsApp (`KAOS.WA_URL`). Probablemente un `main.js`
+- JS: completo según lo que pide el CSS ✅
+- Número real de WhatsApp: debe ir en el enlace `[data-wa]` del HTML
 
 ## Pendiente
 
