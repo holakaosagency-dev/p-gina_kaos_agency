@@ -80,6 +80,15 @@ window.KAOS = window.KAOS || {};
   /* ---------- Scroll suave para anclas ---------- */
   function initSmoothScroll() {
     document.addEventListener("click", function (e) {
+      // Enlace a la página en la que ya estás (menú o logo): sube al inicio
+      var same = e.target.closest("a[href]:not([href^='#']):not([target])");
+      if (same && same.href.split("#")[0] === location.href.split("#")[0] && same.getAttribute("href").indexOf("#") === -1) {
+        e.preventDefault();
+        if (document.querySelector("[data-nav]")) document.querySelector("[data-nav]").classList.remove("is-open");
+        document.body.style.overflow = "";
+        window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+        return;
+      }
       var a = e.target.closest('a[href^="#"]');
       if (!a) return;
       var id = a.getAttribute("href");
@@ -101,7 +110,20 @@ window.KAOS = window.KAOS || {};
      El navegador salta al ancla antes de que el acordeón se cierre y las
      fuentes carguen; al terminar de cargar, recolocamos bajo el menú. */
   function initHashLanding() {
-    if (!location.hash || location.hash.length < 2) return;
+    // Sin #ancla: cada página se abre siempre desde arriba (el navegador no
+    // recupera la posición anterior), salvo que la persona ya haya movido la página.
+    if (!location.hash || location.hash.length < 2) {
+      try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+      var moved = false;
+      ["wheel", "touchmove", "keydown"].forEach(function (ev) {
+        window.addEventListener(ev, function () { moved = true; }, { once: true, passive: true });
+      });
+      function toTop() { if (!moved) window.scrollTo({ top: 0, behavior: "instant" }); }
+      toTop();
+      if (document.readyState === "complete") setTimeout(toTop, 0);
+      else window.addEventListener("load", function () { setTimeout(toTop, 0); });
+      return;
+    }
     function land() {
       var el = null;
       try { el = document.querySelector(location.hash); } catch (e) {}
