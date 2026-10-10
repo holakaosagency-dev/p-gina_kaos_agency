@@ -60,16 +60,32 @@ Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pe
 | `favicon.svg` | K crema sobre cuadrado verde redondeado | También se usa como `apple-touch-icon`, pero iOS no admite SVG ahí: falta un PNG de 180×180 |
 | `404.html` | "Puro caos." Página de error con botón de vuelta al inicio. `noindex` | — |
 | `aviso-legal.html` | Aviso legal LSSI-CE | Razón social, NIF/CIF y domicilio |
+| `index.html` | Inicio: splash "Entrando al caos", hero "Convertimos el Kaos de tu marca en algo que la gente recuerda.", marquesina de marcas, Somos KAOS, 4 servicios con modal, métricas, 4 proyectos con modal, el estudio, equipo (Susana, Óscar, Ainhoa), testimonios, CTA final. SEO + Open Graph + Schema.org `MarketingAgency` | Métricas reales (ahora 32+ marcas, 2.500+ piezas, 15M reproducciones, 4× crecimiento), testimonios reales y verificables, roles del equipo, imagen OG 1200×630, `favicon.ico` y `apple-touch-icon.png` |
 | `contacto.html` | Contacto: email, teléfono, redes, formulario EmailJS (nombre, email, teléfono, servicio, mensaje, privacidad) y mapa de Google | Teléfono real, dirección, ubicación del mapa (ahora Sevilla genérico) |
 
 Estructura común de las páginas: nav (Servicios, Proyectos, Manifiesto, Equipo, Contacto), footer, WhatsApp flotante, volver arriba y banner de cookies. Google Fonts: Fraunces + Space Grotesk. Dominio: `holakaosagency.com`.
 
 Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 000` y WhatsApp `34XXXXXXXXX`.
 
-### Archivos que el HTML enlaza y aún no tengo
+### Páginas que el HTML enlaza y aún no tengo
 
-- `index.html`, `servicios.html`, `proyectos.html`, `manifiesto.html`, `politica-privacidad.html`, `politica-cookies.html`
-- `assets/img/brand/kaos-lifestyle.png` (foto de "papelería de marca" en contacto y como imagen para redes). Probablemente es el mockup de la libreta que tengo como `assets/img/mockup-libreta-kaos.webp`: confirmar y unificar ruta
+- `servicios.html`, `proyectos.html`, `manifiesto.html`, `politica-privacidad.html`, `politica-cookies.html`
+- Casos de estudio: `proyecto-poderio.html`, `proyecto-debodas.html`, `proyecto-celia-zanon.html`, `proyecto-darss.html`
+
+### Imágenes: lo que pide el HTML y lo que tengo
+
+| Ruta que espera el HTML | Archivo recibido | Estado |
+|---|---|---|
+| `assets/img/brand/kaos-lifestyle.png` | `assets/img/mockup-libreta-kaos.webp` | Probable; confirmar. Llegó en WebP |
+| `assets/img/portfolio/celia-zanon.png` | `assets/img/portfolio/ig-celia-zanon.webp` | Llegó en WebP |
+| `assets/img/portfolio/darss.png` | `assets/img/portfolio/ig-darss.webp` | Llegó en WebP |
+| `assets/img/portfolio/debodas.png` | `assets/img/portfolio/ig-debodas.webp` | Llegó en WebP |
+| `assets/img/portfolio/poderio.png` | — | **Falta** (Poderío Market) |
+| `assets/img/team/susana.jpg` | `assets/img/equipo/equipo-1.jpg`? | Por orden de envío; confirmar |
+| `assets/img/team/oscar.jpg` | `assets/img/equipo/equipo-2.jpg`? | Por orden de envío; confirmar |
+| `assets/img/team/ainhoa.jpg` | `assets/img/equipo/equipo-3.jpg`? | Por orden de envío; confirmar |
+
+Recibidas pero sin uso en el HTML visto hasta ahora: el resto de mockups del portfolio (Bonilla, Cordobamia, Jehosua, LOCA, Palm Tribe, Torrijas), logos de clientes, retratos de Celia y Jehosua, isotipos PNG e `isologo.svg` (el HTML lleva el SVG en línea).
 
 ## CSS
 
