@@ -12,6 +12,7 @@ Las fotos llegaron en WebP y el HTML se ha ajustado para usarlas así (pesan men
 |---|---|---|
 | `kaos-lifestyle.webp` | Mockup de libreta con "KAOS AGENCY", 1024×1024 | Se usa en inicio, contacto, servicios y como imagen social (OG) |
 | `isologo.svg` | Isotipo "K" en vector, `currentColor` | El HTML lleva el SVG en línea; el archivo avisa de que es una reinterpretación del vector oficial |
+| `kaos-oficina.jpg` | Foto de trabajo: persona del equipo al teléfono tomando notas en la agenda, con sudadera K y portátil, 1333×2000 | Sin uso aún. Encajaría en "El estudio" (inicio) o en contacto |
 | `isotipo-k-fondo-verde.png` | K crema sobre verde, 1920×1080 | Sin uso en el HTML |
 | `isotipo-k-fondo-crema.png` | K verde sobre crema `#FFFFF0`, 1920×1080 | Sin uso. Su crema no es el del CSS (`#FFF6E7`) |
 
@@ -41,6 +42,7 @@ Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
 | `susana.jpg` | Susana | Dirección & Estrategia |
 | `oscar.jpg` | Óscar | Dirección creativa & Audiovisual |
 | `ainhoa.jpg` | Ainhoa | Social Media & Contenido |
+| `susana-fondo-original.jpg` | Susana | Misma pose que `susana.jpg` pero con el fondo real (pared y zócalo de granito). Sin uso; la web usa la versión de fondo blanco |
 
 ### Sin uso en el HTML (guardadas por si acaso)
 
@@ -56,6 +58,7 @@ Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
 
 | Archivo | Qué es | Pendientes (TODO) |
 |---|---|---|
+| `sitemap.xml` | Mapa del sitio con las 12 páginas públicas | Incluye `proyecto-poderio.html`, que aún no existe. Cambiar el dominio si no es `holakaosagency.com` |
 | `.htaccess` | Config para Hostinger/Apache: caché (HTML/CSS/JS revalidan siempre, imágenes 1 mes, fuentes 1 año), gzip, MIME, cabeceras de seguridad básicas, página 404 | Descomentar la redirección a HTTPS cuando el dominio tenga SSL |
 | `favicon.svg` | K crema sobre cuadrado verde redondeado | También se usa como `apple-touch-icon`, pero iOS no admite SVG ahí: falta un PNG de 180×180 |
 | `404.html` | "Puro caos." Página de error con botón de vuelta al inicio. `noindex` | — |
@@ -80,7 +83,6 @@ Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 00
 ### Páginas que el HTML enlaza y aún no tengo
 
 - `proyecto-poderio.html` (enlazado desde inicio, proyectos y el caso de DARSS)
-- `sitemap.xml` (citado en `robots.txt`)
 
 ## CSS
 
@@ -121,7 +123,6 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 **Falta recibir**
 - [ ] Imagen `assets/img/portfolio/poderio.webp`
 - [ ] Página `proyecto-poderio.html` (se puede crear desde `proyecto-plantilla.html`)
-- [ ] `sitemap.xml`
 
 **Datos reales que sustituir**
 - [ ] Teléfono (`+34 000 000 000`) y WhatsApp (`34XXXXXXXXX`) en todas las páginas
