@@ -66,6 +66,11 @@ Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pe
 | `politica-cookies.html` | Política de cookies (necesarias + Analytics) con botón para cambiar las preferencias | Mencionar Google Maps si se mantiene el mapa en contacto |
 | `proyecto-celia-zanon.html` | Caso de estudio: reto, lo que hicimos, resultados. "Siguiente proyecto" → DARSS | Métricas reales (ahora +1.000 seguidores, x3 alcance…) |
 | `proyecto-darss.html` | Caso de estudio: reto, lo que hicimos, resultados. "Siguiente proyecto" → Poderío | Métricas reales (ahora x4 notoriedad…) |
+| `proyecto-debodas.html` | Caso de estudio. "Siguiente proyecto" → Celia Zanón | Métricas: 4.679 seguidores y 250 publicaciones son datos del perfil, no resultados del trabajo |
+| `proyecto-plantilla.html` | Plantilla para duplicar al crear nuevos casos | **No subir al servidor** (o poner `noindex`): ahora es indexable. Además tiene un comentario antes del `<!DOCTYPE>` |
+| `proyectos.html` | Portfolio completo: 10 proyectos con filtros (RRSS, Contenido, Branding, Marca personal) y lightbox | Descripciones de Córdoba Mía ("marca de ciudad") y Palm Tribe ("marca lifestyle") no cuadran con sus perfiles (market de moda/artesanía; moda flamenca) |
+| `servicios.html` | 8 servicios con precio "desde", proceso en 4 pasos y CTA | Precios orientativos sin confirmar. El bloque de 4 pasos no tiene versión móvil (4 columnas fijas) |
+| `robots.txt` | Permite todo menos `/assets/` y enlaza `sitemap.xml` | Bloquear `/assets/` impide que Google indexe las imágenes. `sitemap.xml` no existe todavía |
 | `contacto.html` | Contacto: email, teléfono, redes, formulario EmailJS (nombre, email, teléfono, servicio, mensaje, privacidad) y mapa de Google | Teléfono real, dirección, ubicación del mapa (ahora Sevilla genérico) |
 
 Estructura común de las páginas: nav (Servicios, Proyectos, Manifiesto, Equipo, Contacto), footer, WhatsApp flotante, volver arriba y banner de cookies. Google Fonts: Fraunces + Space Grotesk. Dominio: `holakaosagency.com`.
@@ -74,8 +79,8 @@ Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 00
 
 ### Páginas que el HTML enlaza y aún no tengo
 
-- `servicios.html`, `proyectos.html`
-- Casos de estudio: `proyecto-poderio.html`, `proyecto-debodas.html`
+- `proyecto-poderio.html` (enlazado desde inicio, proyectos y el caso de DARSS)
+- `sitemap.xml` (citado en `robots.txt`)
 
 ### Imágenes: lo que pide el HTML y lo que tengo
 
@@ -86,11 +91,17 @@ Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 00
 | `assets/img/portfolio/darss.png` | `assets/img/portfolio/ig-darss.webp` | Llegó en WebP |
 | `assets/img/portfolio/debodas.png` | `assets/img/portfolio/ig-debodas.webp` | Llegó en WebP |
 | `assets/img/portfolio/poderio.png` | — | **Falta** (Poderío Market) |
+| `assets/img/portfolio/cordobamia.png` | `assets/img/portfolio/ig-cordobamia-market.webp` | Llegó en WebP |
+| `assets/img/portfolio/bonilla.png` | `assets/img/portfolio/ig-bonilla-nutricion.webp` | Llegó en WebP |
+| `assets/img/portfolio/palmtribe.png` | `assets/img/portfolio/ig-palm-tribe.webp` | Llegó en WebP |
+| `assets/img/portfolio/torrijas.png` | `assets/img/portfolio/ig-torrijas-de-la-yaya.webp` | Llegó en WebP |
+| `assets/img/portfolio/jehosua.png` | `assets/img/portfolio/ig-jehosua-vogele.webp` | Llegó en WebP |
+| `assets/img/portfolio/loca.png` | `assets/img/portfolio/ig-loca-burger.webp` | Llegó en WebP |
 | `assets/img/team/susana.jpg` | `assets/img/equipo/equipo-1.jpg`? | Por orden de envío; confirmar |
 | `assets/img/team/oscar.jpg` | `assets/img/equipo/equipo-2.jpg`? | Por orden de envío; confirmar |
 | `assets/img/team/ainhoa.jpg` | `assets/img/equipo/equipo-3.jpg`? | Por orden de envío; confirmar |
 
-Recibidas pero sin uso en el HTML visto hasta ahora: el resto de mockups del portfolio (Bonilla, Cordobamia, Jehosua, LOCA, Palm Tribe, Torrijas), logos de clientes, retratos de Celia y Jehosua, isotipos PNG e `isologo.svg` (el HTML lleva el SVG en línea).
+Recibidas pero sin uso en el HTML: logos de clientes, retratos de Celia y Jehosua, isotipos PNG e `isologo.svg` (el HTML lleva el SVG en línea).
 
 ## CSS
 
