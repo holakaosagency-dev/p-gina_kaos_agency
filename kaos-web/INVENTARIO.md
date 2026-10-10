@@ -62,6 +62,18 @@ Orden de carga recomendado: `variables.css` → `main.css` → `components.css`.
 | `css/main.css` | Reset, tipografía, layout, botones, reveal on scroll, hero, marquesina, "Somos Kaos", servicios, métricas, equipo, testimonios, CTA final, split imagen+texto, formulario, cabecera de páginas interiores, páginas legales |
 | `css/components.css` | Barra de progreso, nav (con menú móvil), tarjetas de servicio y proyecto, filtros de portfolio, tarjeta de equipo, testimonios, footer, WhatsApp flotante, volver arriba, modal de proyecto, lightbox, banner de cookies, splash/loader |
 
+## JavaScript
+
+JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
+
+| Archivo | Qué hace | Necesita |
+|---|---|---|
+| `js/analytics.js` | Carga Google Analytics 4 solo si se aceptan las cookies analíticas (IP anonimizada) | **Pendiente:** ID real de GA4 (ahora `G-XXXXXXXXXX`). Cargar antes que `cookies.js` |
+| `js/cookies.js` | Banner de cookies RGPD: aceptar, solo necesarias o personalizar. Guarda la elección en `localStorage` (`kaos_consent_v1`). Expone `KAOS.resetCookieConsent()` para la política de cookies | HTML con `[data-cookie-banner]`, `[data-cookie-prefs]`, `#cookie-analytics` |
+| `js/contact.js` | Formulario de contacto con EmailJS: validación en tiempo real, estado "Enviando…", mensajes de éxito/error con WhatsApp de respaldo, evento `generate_lead` en GA | **Pendiente:** `PUBLIC_KEY`, `SERVICE_ID`, `TEMPLATE_ID` de EmailJS + script del SDK de EmailJS en el HTML. Usa `KAOS.WA_URL` (definido en otro JS aún no recibido) |
+| `js/counters.js` | Contadores que suben de 0 al valor al entrar en pantalla (formato es-ES). Sin animación si hay movimiento reducido | Markup `[data-counter]` |
+| `js/filters.js` | Filtro del portfolio por categoría (en `proyectos.html`) | `[data-filters]`, `[data-filter]`, `[data-work-grid]`, `[data-cats]` |
+
 ## Sistema de diseño (de `variables.css`)
 
 - Lema: "Fieles al caos creativo, porque el orden nunca hizo historia"
@@ -73,8 +85,8 @@ Orden de carga recomendado: `variables.css` → `main.css` → `components.css`.
 
 ## Pistas sobre lo que falta (según el CSS)
 
-- Páginas: inicio (hero, marquesina, servicios, métricas, equipo, testimonios, CTA), `servicios.html` (citada en un comentario), páginas interiores y legales, contacto con formulario
-- JS para: splash, nav al hacer scroll y menú móvil, barra de progreso, reveal y word reveal, contadores, filtros de portfolio, modal, lightbox, cookies, volver arriba, formulario
+- Páginas: inicio (hero, marquesina, servicios, métricas, equipo, testimonios, CTA), `servicios.html`, `proyectos.html`, contacto con formulario, páginas legales (incluida política de cookies)
+- JS aún no recibido para: splash, nav al hacer scroll y menú móvil, barra de progreso, reveal y word reveal, modal, lightbox, volver arriba y la URL de WhatsApp (`KAOS.WA_URL`). Probablemente un `main.js`
 
 ## Pendiente
 
