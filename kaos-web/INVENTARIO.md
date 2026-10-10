@@ -1,56 +1,56 @@
 # Inventario de archivos — kaos-web
 
-Registro de los archivos de la web que se van recopilando. Las rutas son provisionales hasta tener el HTML (se ajustarán a las que este referencie).
+Todo lo recopilado de la web de KAOS Agency, ordenado con las rutas que usa el HTML. Para verla en local: `npx -y serve kaos-web -l 8765` desde la raíz del repo.
 
-## Marca
+## Imágenes
 
-| Archivo | Qué es | Notas |
-|---|---|---|
-| `assets/isologo.svg` | Isotipo "K" en vector (240×150) | Usa `currentColor`, se recolorea con CSS. El propio SVG avisa de que es una reinterpretación y puede sustituirse por el vector oficial |
-| `assets/img/isotipo-k-fondo-verde.png` | "K" crema sobre fondo verde, 1920×1080 | Fondo `#135E51` |
-| `assets/img/isotipo-k-fondo-crema.png` | "K" verde sobre fondo crema, 1920×1080 | Fondo `#FFFFF0` |
-| `assets/img/mockup-libreta-kaos.webp` | Mockup: libreta con el logotipo "KAOS AGENCY", 1024×1024 | Foto de ambiente para la web |
+Las fotos llegaron en WebP y el HTML se ha ajustado para usarlas así (pesan menos que PNG).
 
-## Logos de clientes / proyectos
+### Marca — `assets/img/brand/`
 
 | Archivo | Qué es | Notas |
 |---|---|---|
-| `assets/img/clientes/logo-bonilla-nutricion.png` | Logo "bonilla nutrición", 1111×1445 | Negro sobre fondo transparente (PNG con canal alfa) |
-| `assets/img/clientes/logo-cordobamia-market.jpg` | Logo "Cordobamia Market", 1125×2000 | Vertical (formato story), fondo crema. Rayitas cortadas en el borde inferior |
-| `assets/img/clientes/logo-loca-hamburguesa.png` | Logo "LOCA — la hamburguesa que vuelve para poner cordura", 1080×1350 | Rojo sobre blanco |
+| `kaos-lifestyle.webp` | Mockup de libreta con "KAOS AGENCY", 1024×1024 | Se usa en inicio, contacto, servicios y como imagen social (OG) |
+| `isologo.svg` | Isotipo "K" en vector, `currentColor` | El HTML lleva el SVG en línea; el archivo avisa de que es una reinterpretación del vector oficial |
+| `isotipo-k-fondo-verde.png` | K crema sobre verde, 1920×1080 | Sin uso en el HTML |
+| `isotipo-k-fondo-crema.png` | K verde sobre crema `#FFFFF0`, 1920×1080 | Sin uso. Su crema no es el del CSS (`#FFF6E7`) |
 
-## Portfolio — mockups de perfiles de Instagram (iPhone)
+### Portfolio — `assets/img/portfolio/`
 
-WebP con fondo transparente, 970×2000 (salvo el de Jehosua: 1601×2000, iPhone en perspectiva). Cuentas gestionadas por la agencia (en todas aparece "Le siguen … agency.kaos").
+Mockups de iPhone con perfiles de Instagram gestionados por la agencia. WebP con fondo transparente, 970×2000 (Jehosua: 1601×2000, en perspectiva).
 
-| Archivo | Cuenta | Qué es |
+| Archivo | Cuenta |
+|---|---|
+| `celia-zanon.webp` | @celiazanon — creadora digital (105 mil) |
+| `darss.webp` | @darss.one — ropa pintada a mano |
+| `debodas.webp` | @debodas_ — bodas y eventos, Málaga |
+| `cordobamia.webp` | @cordobamia.market — market de moda, artesanía y diseño, Córdoba |
+| `bonilla.webp` | @bonilla.nutricion — dietista-nutricionista |
+| `palmtribe.webp` | @palm.tribe — moda flamenca (19,5 mil, verificada) |
+| `torrijas.webp` | @lastorrijasdelayaya — torrijas artesanas, Sevilla |
+| `jehosua.webp` | @jehosuavogele — hair & makeup artist (16 mil) |
+| `loca.webp` | @loca_jerez — hamburguesería, Jerez |
+| `poderio.webp` | **FALTA** — Poderío Market (inicio, proyectos, plantilla) |
+
+### Equipo — `assets/img/team/`
+
+Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
+
+| Archivo | Persona | Rol en la web |
 |---|---|---|
-| `assets/img/portfolio/ig-bonilla-nutricion.webp` | @bonilla.nutricion | Jose Manuel Bonilla, dietista-nutricionista |
-| `assets/img/portfolio/ig-celia-zanon.webp` | @celiazanon | Celia Zanón, creadora digital (105 mil seguidores) |
-| `assets/img/portfolio/ig-cordobamia-market.webp` | @cordobamia.market | Market de moda, artesanía y diseño en Córdoba |
-| `assets/img/portfolio/ig-darss.webp` | @darss.one | DARSS, marca de ropa pintada a mano |
-| `assets/img/portfolio/ig-debodas.webp` | @debodas_ | Debodas, eventos y detalles de boda (Málaga) |
-| `assets/img/portfolio/ig-jehosua-vogele.webp` | @jehosuavogele | Jehosua Vögele, hair & makeup artist (16 mil). Mockup inclinado, ideal para hero o destacado |
-| `assets/img/portfolio/ig-loca-burger.webp` | @loca_jerez | LOCA Burger, hamburguesería en Jerez |
-| `assets/img/portfolio/ig-palm-tribe.webp` | @palm.tribe | Palm Tribe, trajes y complementos de flamenca (19,5 mil, verificada) |
-| `assets/img/portfolio/ig-torrijas-de-la-yaya.webp` | @lastorrijasdelayaya | Las Torrijas de la Yaya, torrijas artesanas en Sevilla |
+| `susana.jpg` | Susana | Dirección & Estrategia |
+| `oscar.jpg` | Óscar | Dirección creativa & Audiovisual |
+| `ainhoa.jpg` | Ainhoa | Social Media & Contenido |
 
-## Retratos
-
-| Archivo | Qué es | Notas |
-|---|---|---|
-| `assets/img/personas/retrato-celia-zanon.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Celia Zanón (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
-| `assets/img/personas/retrato-jehosua-vogele.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Jehosua Vögele (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
-
-## Equipo Kaos
-
-Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pendiente: nombre y rol de cada persona para renombrar.
+### Sin uso en el HTML (guardadas por si acaso)
 
 | Archivo | Qué es |
 |---|---|
-| `assets/img/equipo/equipo-1.jpg` | Chica de perfil mirando a cámara, sonriendo; se ve "KAOS AGENCY" en la espalda |
-| `assets/img/equipo/equipo-2.jpg` | Chico de frente con brazos cruzados; K del isotipo en el pecho |
-| `assets/img/equipo/equipo-3.jpg` | Chica de frente con brazos cruzados, gesto divertido; K en el pecho |
+| `assets/img/clientes/logo-bonilla-nutricion.png` | Logo negro, fondo transparente |
+| `assets/img/clientes/logo-cordobamia-market.jpg` | Logo en formato story; tiene una línea cortada en el borde inferior |
+| `assets/img/clientes/logo-loca-hamburguesa.png` | Logo rojo sobre blanco |
+| `assets/img/personas/retrato-celia-zanon.jpg` | Misma foto que su perfil, formato story |
+| `assets/img/personas/retrato-jehosua-vogele.jpg` | Misma foto que su perfil, formato story |
 
 ## Raíz del sitio
 
@@ -82,27 +82,6 @@ Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 00
 - `proyecto-poderio.html` (enlazado desde inicio, proyectos y el caso de DARSS)
 - `sitemap.xml` (citado en `robots.txt`)
 
-### Imágenes: lo que pide el HTML y lo que tengo
-
-| Ruta que espera el HTML | Archivo recibido | Estado |
-|---|---|---|
-| `assets/img/brand/kaos-lifestyle.png` | `assets/img/mockup-libreta-kaos.webp` | Probable; confirmar. Llegó en WebP |
-| `assets/img/portfolio/celia-zanon.png` | `assets/img/portfolio/ig-celia-zanon.webp` | Llegó en WebP |
-| `assets/img/portfolio/darss.png` | `assets/img/portfolio/ig-darss.webp` | Llegó en WebP |
-| `assets/img/portfolio/debodas.png` | `assets/img/portfolio/ig-debodas.webp` | Llegó en WebP |
-| `assets/img/portfolio/poderio.png` | — | **Falta** (Poderío Market) |
-| `assets/img/portfolio/cordobamia.png` | `assets/img/portfolio/ig-cordobamia-market.webp` | Llegó en WebP |
-| `assets/img/portfolio/bonilla.png` | `assets/img/portfolio/ig-bonilla-nutricion.webp` | Llegó en WebP |
-| `assets/img/portfolio/palmtribe.png` | `assets/img/portfolio/ig-palm-tribe.webp` | Llegó en WebP |
-| `assets/img/portfolio/torrijas.png` | `assets/img/portfolio/ig-torrijas-de-la-yaya.webp` | Llegó en WebP |
-| `assets/img/portfolio/jehosua.png` | `assets/img/portfolio/ig-jehosua-vogele.webp` | Llegó en WebP |
-| `assets/img/portfolio/loca.png` | `assets/img/portfolio/ig-loca-burger.webp` | Llegó en WebP |
-| `assets/img/team/susana.jpg` | `assets/img/equipo/equipo-1.jpg`? | Por orden de envío; confirmar |
-| `assets/img/team/oscar.jpg` | `assets/img/equipo/equipo-2.jpg`? | Por orden de envío; confirmar |
-| `assets/img/team/ainhoa.jpg` | `assets/img/equipo/equipo-3.jpg`? | Por orden de envío; confirmar |
-
-Recibidas pero sin uso en el HTML: logos de clientes, retratos de Celia y Jehosua, isotipos PNG e `isologo.svg` (el HTML lleva el SVG en línea).
-
 ## CSS
 
 Orden de carga recomendado: `variables.css` → `main.css` → `components.css`.
@@ -121,7 +100,7 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 |---|---|---|
 | `js/analytics.js` | Carga Google Analytics 4 solo si se aceptan las cookies analíticas (IP anonimizada) | **Pendiente:** ID real de GA4 (ahora `G-XXXXXXXXXX`). Cargar antes que `cookies.js` |
 | `js/cookies.js` | Banner de cookies RGPD: aceptar, solo necesarias o personalizar. Guarda la elección en `localStorage` (`kaos_consent_v1`). Expone `KAOS.resetCookieConsent()` para la política de cookies | HTML con `[data-cookie-banner]`, `[data-cookie-prefs]`, `#cookie-analytics` |
-| `js/contact.js` | Formulario de contacto con EmailJS: validación en tiempo real, estado "Enviando…", mensajes de éxito/error con WhatsApp de respaldo, evento `generate_lead` en GA | **Pendiente:** `PUBLIC_KEY`, `SERVICE_ID`, `TEMPLATE_ID` de EmailJS + script del SDK de EmailJS en el HTML. Usa `KAOS.WA_URL` (definido en otro JS aún no recibido) |
+| `js/contact.js` | Formulario de contacto con EmailJS: validación en tiempo real, estado "Enviando…", mensajes de éxito/error con WhatsApp de respaldo, evento `generate_lead` en GA | **Pendiente:** `PUBLIC_KEY`, `SERVICE_ID`, `TEMPLATE_ID` de EmailJS + script del SDK de EmailJS en el HTML. Usa `KAOS.WA_URL` (de `main.js`) |
 | `js/counters.js` | Contadores que suben de 0 al valor al entrar en pantalla (formato es-ES). Sin animación si hay movimiento reducido | Markup `[data-counter]` |
 | `js/filters.js` | Filtro del portfolio por categoría (en `proyectos.html`) | `[data-filters]`, `[data-filter]`, `[data-work-grid]`, `[data-cats]` |
 | `js/main.js` | Núcleo: splash/loader (máx. 1,5 s, solo home), nav sólido al hacer scroll, hamburguesa, scroll suave a anclas, volver arriba, barra de progreso, reveals on scroll, word reveal del hero, nav activo por sección, botones magnéticos, año dinámico. Define `KAOS.WA_URL`. Cada parte va protegida: si una falla, el resto sigue | Enlace de WhatsApp con `[data-wa]` en el HTML; si no existe usa el relleno `https://wa.me/34XXXXXXXXX` |
@@ -134,15 +113,30 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 - Verde principal `#135E51` · verde profundo `#0d423a` · verde noche `#08251f`
 - Acento único: salvia `#ABC685` (tinte claro `#cddeb3`)
 - Crema `#FFF6E7` · crema cálida `#f4e8cf`
-- Tipografías: **Fraunces** (display, serif) y **Space Grotesk** (cuerpo/UI). Pendiente: cómo se cargan (¿Google Fonts en el HTML o archivos locales?)
+- Tipografías: **Fraunces** (display, serif) y **Space Grotesk** (cuerpo/UI), cargadas desde Google Fonts
 - Nota: los PNG del isotipo usan un crema distinto (`#FFFFF0`) al del CSS (`#FFF6E7`)
 
-## Pistas sobre lo que falta (según el CSS)
+## Pendiente antes de publicar
 
-- Páginas: inicio (hero, marquesina, servicios, métricas, equipo, testimonios, CTA), `servicios.html`, `proyectos.html`, contacto con formulario, páginas legales (incluida política de cookies)
-- JS: completo según lo que pide el CSS ✅
-- Número real de WhatsApp: debe ir en el enlace `[data-wa]` del HTML
+**Falta recibir**
+- [ ] Imagen `assets/img/portfolio/poderio.webp`
+- [ ] Página `proyecto-poderio.html` (se puede crear desde `proyecto-plantilla.html`)
+- [ ] `sitemap.xml`
 
-## Pendiente
+**Datos reales que sustituir**
+- [ ] Teléfono (`+34 000 000 000`) y WhatsApp (`34XXXXXXXXX`) en todas las páginas
+- [ ] NIF/CIF, razón social y domicilio (aviso legal y privacidad)
+- [ ] ID de Google Analytics 4 y claves de EmailJS
+- [ ] Métricas de inicio y de cada caso de estudio, testimonios verificables, precios de servicios
+- [ ] Ubicación del mapa de contacto (ahora "Sevilla")
+- [ ] Usuarios reales de Instagram, TikTok y LinkedIn
 
-- HTML, CSS, JS, fuentes y resto de imágenes.
+**Mejoras detectadas (para QA)**
+- [ ] Imagen social 1200×630 en JPG y `apple-touch-icon.png` 180×180 (iOS no usa SVG)
+- [ ] Mapa de Google: cargar solo tras consentimiento o clic
+- [ ] `robots.txt`: quitar `Disallow: /assets/` para que Google vea las imágenes
+- [ ] No subir `proyecto-plantilla.html` (o ponerle `noindex`)
+- [ ] Contraste de `.svc__idx` (salvia sobre crema)
+- [ ] Bloque "Cómo trabajamos" de servicios sin versión móvil
+- [ ] Descripciones de Córdoba Mía y Palm Tribe en `proyectos.html`; unificar "Córdoba Mía" / "Cordobamia Market"
+- [ ] Activar redirección a HTTPS en `.htaccess` al publicar
