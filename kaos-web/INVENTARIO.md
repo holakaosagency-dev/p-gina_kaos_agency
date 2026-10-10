@@ -43,7 +43,6 @@ Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
 |---|---|---|
 | `susana.jpg` | Susana | Dirección & Estrategia |
 | `oscar.jpg` | Óscar | Dirección creativa & Audiovisual |
-| `ainhoa.jpg` | Ainhoa | Social Media & Contenido |
 | `susana-fondo-original.jpg` | Susana | Misma pose que `susana.jpg` pero con el fondo real (pared y zócalo de granito). Sin uso; la web usa la versión de fondo blanco |
 
 ### Sin uso en el HTML (guardadas por si acaso)
@@ -65,7 +64,7 @@ Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
 | `favicon.svg` | K crema sobre cuadrado verde redondeado | También se usa como `apple-touch-icon`, pero iOS no admite SVG ahí: falta un PNG de 180×180 |
 | `404.html` | "Puro caos." Página de error con botón de vuelta al inicio. `noindex` | — |
 | `aviso-legal.html` | Aviso legal LSSI-CE | Razón social, NIF/CIF y domicilio |
-| `index.html` | Inicio: splash "Entrando al caos", hero "Convertimos el Kaos de tu marca en algo que la gente recuerda.", marquesina de marcas, Somos KAOS, 4 servicios con modal, métricas, 4 proyectos con modal, el estudio, equipo (Susana, Óscar, Ainhoa), testimonios, CTA final. SEO + Open Graph + Schema.org `MarketingAgency` | Métricas reales (ahora 32+ marcas, 2.500+ piezas, 15M reproducciones, 4× crecimiento), testimonios reales y verificables, roles del equipo, imagen OG 1200×630, `favicon.ico` y `apple-touch-icon.png` |
+| `index.html` | Inicio: splash "Entrando al caos", hero "Convertimos el Kaos de tu marca en algo que la gente recuerda.", marquesina de marcas, Somos KAOS, 4 servicios con modal, métricas, 4 proyectos con modal, el estudio, equipo (Susana y Óscar), testimonios, CTA final. SEO + Open Graph + Schema.org `MarketingAgency` | Métricas reales (ahora 32+ marcas, 2.500+ piezas, 15M reproducciones, 4× crecimiento), testimonios reales y verificables,  imagen OG 1200×630, `favicon.ico` y `apple-touch-icon.png` |
 | `manifiesto.html` | Manifiesto en frases alternas izquierda/derecha sobre verde noche, cierre "Bienvenidos al KAOS." y botón "Únete al caos" | — |
 | `politica-privacidad.html` | Política de privacidad RGPD (responsable, finalidad, legitimación, conservación, destinatarios, derechos, seguridad) | NIF y domicilio del responsable |
 | `politica-cookies.html` | Política de cookies (necesarias + Analytics) con botón para cambiar las preferencias | Mencionar Google Maps si se mantiene el mapa en contacto |
@@ -124,7 +123,7 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 ## Pendiente antes de publicar
 
 **Datos reales que sustituir**
-- [ ] Teléfono (`+34 000 000 000`) y WhatsApp (`34XXXXXXXXX`) en todas las páginas
+- [ ] WhatsApp (`34XXXXXXXXX`) en todas las páginas
 - [ ] NIF/CIF, razón social y domicilio (aviso legal y privacidad)
 - [ ] ID de Google Analytics 4 y claves de EmailJS
 - [ ] Métricas de inicio y de cada caso de estudio, testimonios verificables, precios de servicios

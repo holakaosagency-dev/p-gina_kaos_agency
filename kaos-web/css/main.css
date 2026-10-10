@@ -321,7 +321,7 @@ section.theme-dark, section.theme-night { background: var(--bg); color: var(--te
 .channel__arrow { font-family: var(--font-sans); font-weight: 400; font-size: 0.6em; flex-shrink: 0; transition: transform var(--dur) var(--ease-out); }
 a.channel:hover .channel__arrow { transform: translateX(4px); }
 .channel[aria-expanded="true"] .channel__arrow { transform: rotate(-90deg); }
-.channel-mail .acc__inner { padding: clamp(1.2rem, 3vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem); }
+.channel-forms .acc__inner { padding: clamp(1.2rem, 3vw, 2rem) 0 clamp(0.5rem, 2vw, 1rem); }
 @media (max-width: 820px) {
   .contact__grid { grid-template-columns: 1fr; }
   .contact__media { aspect-ratio: 16 / 11; }
@@ -368,8 +368,8 @@ a.channel:hover .channel__arrow { transform: translateX(4px); }
 /* =================================================================
    EQUIPO
    ================================================================= */
-.team-grid { grid-template-columns: repeat(3, 1fr); }
-@media (max-width: 820px){ .team-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } }
+.team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; }
+@media (max-width: 640px){ .team-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } }
 
 /* =================================================================
    TESTIMONIOS

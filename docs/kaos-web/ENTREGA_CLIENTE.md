@@ -45,7 +45,7 @@ Estos son los únicos datos que faltan por rellenar. Busca `TODO` en los archivo
 
 ### ✅ 1.5 Datos legales (importante por ley)
 - En **`aviso-legal.html`** y **`politica-privacidad.html`** rellena los `TODO`: razón social, NIF/CIF y domicilio.
-- Teléfono: busca `+34 000 000 000` y `+34000000000` y pon el real (o elimina la línea si no tienen).
+- Ya no se muestra teléfono en la web: en su lugar está el formulario "Te llamamos nosotros", que llega al mismo correo que el de "Escríbenos un mail".
 
 ### ✅ 1.6 Dominio en las URLs (SEO)
 - Si el dominio final **no** es `holakaosagency.com`, reemplázalo en:
@@ -83,7 +83,7 @@ Cuando edites un `.css` o `.js`, **sube el `?v=20261010`** que verás en las eti
 ## 4. Cómo actualizar contenido sin tocar "código difícil"
 
 - **Textos**: abre el `.html` correspondiente y edita el texto entre etiquetas. No toques lo que esté dentro de `< >`.
-- **Fotos del equipo**: reemplaza los archivos en `assets/img/team/` manteniendo el mismo nombre (`susana.jpg`, `oscar.jpg`, `ainhoa.jpg`).
+- **Fotos del equipo**: reemplaza los archivos en `assets/img/team/` manteniendo el mismo nombre (`susana.jpg`, `oscar.jpg`).
 - **Proyectos del portfolio**: las imágenes están en `assets/img/portfolio/`. Para añadir un proyecto nuevo en `proyectos.html`, copia un bloque `<article class="work ...">` y cambia imagen, título y categorías (`data-cats`).
 - **Añadir un caso de estudio**: duplica `proyecto-plantilla.html`, renómbralo `proyecto-nombre.html` y rellena los textos marcados.
 - **Servicios y precios**: en `servicios.html`, busca la palabra `price` para editar tarifas.

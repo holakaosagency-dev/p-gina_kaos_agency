@@ -334,11 +334,6 @@
         <h3 class="member__name">Óscar</h3>
         <p class="member__line">Piensa en cámara. Convierte una idea en algo que se ve, se siente y se comparte.</p>
       </article>
-      <article class="member reveal" data-delay="2">
-        <div class="member__photo"><img src="assets/img/team/ainhoa.jpg" alt="Ainhoa, del equipo de KAOS Agency" loading="lazy"><span class="member__role">Social Media &amp; Contenido</span></div>
-        <h3 class="member__name">Ainhoa</h3>
-        <p class="member__line">Vive en las redes para que tú no tengas que hacerlo. Tendencias con cabeza.</p>
-      </article>
     </div>
   </div>
 </section>
@@ -379,9 +374,47 @@
       <div class="contact__channels reveal" data-delay="1">
         <!-- TODO: Reemplazar 34XXXXXXXXX con el número real de WhatsApp de KAOS -->
         <a class="channel" href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20vuestros%20servicios" target="_blank" rel="noopener"><span class="channel__arrow" aria-hidden="true">→</span>Háblanos por WhatsApp</a>
-        <!-- TODO: sustituir por el teléfono real de KAOS -->
-        <a class="channel" href="tel:+34000000000"><span class="channel__arrow" aria-hidden="true">→</span>Llámanos al teléfono</a>
-        <div class="channel-mail" data-accordion>
+        <!-- Los dos formularios llegan al correo de KAOS vía EmailJS (ver js/contact.js) -->
+        <div class="channel-forms" data-accordion>
+          <h3 class="acc__head"><button class="channel acc__btn" type="button" id="call-b" aria-expanded="false" aria-controls="call-p"><span class="channel__arrow" aria-hidden="true">→</span>Te llamamos nosotros</button></h3>
+          <div class="acc__panel" id="call-p" role="region" aria-labelledby="call-b">
+            <div class="acc__inner">
+              <form class="form form--line" data-contact-form="callback" data-ok-msg="¡Recibido! Te llamamos muy pronto. 📞" novalidate>
+                <input type="hidden" name="service" value="Quiere que le llaméis">
+                <div class="form__row">
+                  <div class="field">
+                    <label for="c-name">nombre *</label>
+                    <input id="c-name" name="from_name" type="text" required minlength="2" autocomplete="name">
+                    <span class="err"></span>
+                  </div>
+                  <div class="field">
+                    <label for="c-phone">teléfono *</label>
+                    <input id="c-phone" name="phone" type="tel" required autocomplete="tel" pattern="[0-9+\s().-]{6,}">
+                    <span class="err"></span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="c-when">¿cuándo te va mejor? *</label>
+                  <select id="c-when" name="message" required>
+                    <option value="" selected disabled>Elige una franja</option>
+                    <option>Por la mañana</option>
+                    <option>Por la tarde</option>
+                    <option>Me da igual</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+                <div class="field field--check">
+                  <input id="c-privacy" type="checkbox" required>
+                  <label for="c-privacy">He leído y acepto la <a class="link-underline" href="politica-privacidad.html">política de privacidad</a>. *</label>
+                </div>
+                <div class="form__submit">
+                  <button type="submit" class="btn btn--accent" data-submit><span data-submit-label>Que me llamen <span class="arrow">→</span></span></button>
+                  <span class="form__note">Te llamamos en &lt; 24h.</span>
+                </div>
+                <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
           <h3 class="acc__head"><button class="channel acc__btn" type="button" id="mail-b" aria-expanded="false" aria-controls="mail-p"><span class="channel__arrow" aria-hidden="true">→</span>Escríbenos un mail</button></h3>
           <div class="acc__panel" id="mail-p" role="region" aria-labelledby="mail-b">
             <div class="acc__inner">
