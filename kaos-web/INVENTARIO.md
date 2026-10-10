@@ -61,6 +61,11 @@ Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pe
 | `404.html` | "Puro caos." Página de error con botón de vuelta al inicio. `noindex` | — |
 | `aviso-legal.html` | Aviso legal LSSI-CE | Razón social, NIF/CIF y domicilio |
 | `index.html` | Inicio: splash "Entrando al caos", hero "Convertimos el Kaos de tu marca en algo que la gente recuerda.", marquesina de marcas, Somos KAOS, 4 servicios con modal, métricas, 4 proyectos con modal, el estudio, equipo (Susana, Óscar, Ainhoa), testimonios, CTA final. SEO + Open Graph + Schema.org `MarketingAgency` | Métricas reales (ahora 32+ marcas, 2.500+ piezas, 15M reproducciones, 4× crecimiento), testimonios reales y verificables, roles del equipo, imagen OG 1200×630, `favicon.ico` y `apple-touch-icon.png` |
+| `manifiesto.html` | Manifiesto en frases alternas izquierda/derecha sobre verde noche, cierre "Bienvenidos al KAOS." y botón "Únete al caos" | — |
+| `politica-privacidad.html` | Política de privacidad RGPD (responsable, finalidad, legitimación, conservación, destinatarios, derechos, seguridad) | NIF y domicilio del responsable |
+| `politica-cookies.html` | Política de cookies (necesarias + Analytics) con botón para cambiar las preferencias | Mencionar Google Maps si se mantiene el mapa en contacto |
+| `proyecto-celia-zanon.html` | Caso de estudio: reto, lo que hicimos, resultados. "Siguiente proyecto" → DARSS | Métricas reales (ahora +1.000 seguidores, x3 alcance…) |
+| `proyecto-darss.html` | Caso de estudio: reto, lo que hicimos, resultados. "Siguiente proyecto" → Poderío | Métricas reales (ahora x4 notoriedad…) |
 | `contacto.html` | Contacto: email, teléfono, redes, formulario EmailJS (nombre, email, teléfono, servicio, mensaje, privacidad) y mapa de Google | Teléfono real, dirección, ubicación del mapa (ahora Sevilla genérico) |
 
 Estructura común de las páginas: nav (Servicios, Proyectos, Manifiesto, Equipo, Contacto), footer, WhatsApp flotante, volver arriba y banner de cookies. Google Fonts: Fraunces + Space Grotesk. Dominio: `holakaosagency.com`.
@@ -69,8 +74,8 @@ Datos de relleno que se repiten en todas las páginas: teléfono `+34 000 000 00
 
 ### Páginas que el HTML enlaza y aún no tengo
 
-- `servicios.html`, `proyectos.html`, `manifiesto.html`, `politica-privacidad.html`, `politica-cookies.html`
-- Casos de estudio: `proyecto-poderio.html`, `proyecto-debodas.html`, `proyecto-celia-zanon.html`, `proyecto-darss.html`
+- `servicios.html`, `proyectos.html`
+- Casos de estudio: `proyecto-poderio.html`, `proyecto-debodas.html`
 
 ### Imágenes: lo que pide el HTML y lo que tengo
 
