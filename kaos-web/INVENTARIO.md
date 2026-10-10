@@ -29,7 +29,8 @@ Mockups de iPhone con perfiles de Instagram gestionados por la agencia. WebP con
 | `bonilla.webp` | @bonilla.nutricion — dietista-nutricionista |
 | `palmtribe.webp` | @palm.tribe — moda flamenca (19,5 mil, verificada) |
 | `torrijas.webp` | @lastorrijasdelayaya — torrijas artesanas, Sevilla |
-| `jehosua.webp` | @jehosuavogele — hair & makeup artist (16 mil) |
+| `jehosua.webp` | @jehosuavogele — hair & makeup artist (16 mil). iPhone inclinado; es el que usa `proyectos.html` |
+| `jehosua-recto.webp` | @jehosuavogele — misma captura con el iPhone recto, 970×2000. Sin uso aún |
 | `loca.webp` | @loca_jerez — hamburguesería, Jerez |
 | `poderio.webp` | **FALTA** — Poderío Market (inicio, proyectos, plantilla) |
 
