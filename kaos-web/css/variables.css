@@ -1,18 +1,19 @@
 /* =================================================================
    KAOS AGENCY — Design System / Tokens
    Identidad: "Fieles al caos creativo, porque el orden nunca hizo historia"
-   Paleta y tipografía tomadas del Manual de Identidad Visual de KAOS.
+   Paleta del branding nuevo de KAOS (verde #135E51 + crema #FFFFF0) con el
+   salvia del manual como único acento. Titulares en grotesca negrita.
    ================================================================= */
 
 :root {
-  /* ---- Color de marca (Manual de Identidad) ---- */
+  /* ---- Color de marca (branding nuevo + salvia del manual) ---- */
   --green:        #135E51;   /* verde principal */
   --green-deep:   #0d423a;   /* verde profundo (secciones oscuras, hover) */
   --green-night:  #08251f;   /* casi negro verdoso (texto, footer) */
   --sage:         #ABC685;   /* verde salvia — ÚNICO color de acento */
   --sage-soft:    #cddeb3;   /* tinte salvia claro (placeholder de imágenes) */
-  --cream:        #FFF6E7;   /* crema — papel/fondo */
-  --cream-deep:   #f4e8cf;   /* crema más cálida (tarjetas, alternancia) */
+  --cream:        #FFFFF0;   /* crema del branding nuevo — papel/fondo */
+  --cream-deep:   #F3F3DF;   /* crema más profunda (tarjetas, alternancia) */
   --black:        #0a0a0a;
   --white:        #ffffff;
 
@@ -26,8 +27,8 @@
   --accent-ink:   var(--green-night);   /* texto sobre acento */
 
   /* ---- Tipografía ---- */
-  /* Display editorial (serif de alto contraste) ≈ Dream Orphans / "Opción I" del manual */
-  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  /* Titulares: grotesca negrita de tracking ajustado ≈ Neue Montreal Bold del manual */
+  --font-display: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
   /* UI, etiquetas y cuerpo (grotesca) ≈ Neue Montreal / Sharp Grotesk del manual */
   --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
@@ -77,8 +78,8 @@
   --bg: var(--green);
   --surface: var(--green-deep);
   --text: var(--cream);
-  --text-soft: rgba(255, 246, 231, 0.72);
-  --line: rgba(255, 246, 231, 0.18);
+  --text-soft: rgba(255, 255, 240, 0.72);
+  --line: rgba(255, 255, 240, 0.18);
   --accent-ink: var(--green-night);
 }
 
@@ -86,6 +87,6 @@
   --bg: var(--green-night);
   --surface: var(--green-deep);
   --text: var(--cream);
-  --text-soft: rgba(255, 246, 231, 0.68);
-  --line: rgba(255, 246, 231, 0.14);
+  --text-soft: rgba(255, 255, 240, 0.68);
+  --line: rgba(255, 255, 240, 0.14);
 }

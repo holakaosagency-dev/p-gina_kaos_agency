@@ -11,9 +11,9 @@ Las fotos llegaron en WebP y el HTML se ha ajustado para usarlas así (pesan men
 | Archivo | Qué es | Notas |
 |---|---|---|
 | `kaos-lifestyle.webp` | Mockup de libreta con "KAOS AGENCY", 1024×1024 | Se usa en inicio, contacto, servicios y como imagen social (OG) |
-| `logotipo-kaos.svg` | **Logotipo oficial** "KAOS / AGENCY" en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Aún sin uso en el HTML |
-| `isotipo-k.svg` | **Isotipo oficial** K curva en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Aún sin uso: el HTML lleva en línea la versión reinterpretada |
-| `isologo.svg` | K "reinterpretada" con polígonos rectos | Es la que usa hoy la web (en línea en nav, footer, splash y favicon). Sustituir por `isotipo-k.svg` |
+| `logotipo-kaos.svg` | **Logotipo oficial** "KAOS / AGENCY" en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Va en línea en el menú de todas las páginas |
+| `isotipo-k.svg` | **Isotipo oficial** K curva en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Se usa en la pantalla de carga y en `favicon.svg` |
+| `isologo.svg` | K "reinterpretada" antigua, con polígonos rectos | Ya sin uso; se conserva como histórico |
 | `kaos-oficina.jpg` | Foto de trabajo: persona del equipo al teléfono tomando notas en la agenda, con sudadera K y portátil, 1333×2000 | Sin uso aún. Encajaría en "El estudio" (inicio) o en contacto |
 | `isotipo-k-fondo-verde.png` | K crema sobre verde, 1920×1080 | Sin uso en el HTML |
 | `isotipo-k-fondo-crema.png` | K verde sobre crema `#FFFFF0`, 1920×1080 | Sin uso. Su crema no es el del CSS (`#FFF6E7`) |
@@ -34,7 +34,6 @@ Mockups de iPhone con perfiles de Instagram gestionados por la agencia. WebP con
 | `jehosua.webp` | @jehosuavogele — hair & makeup artist (16 mil). iPhone inclinado; es el que usa `proyectos.html` |
 | `jehosua-recto.webp` | @jehosuavogele — misma captura con el iPhone recto, 970×2000. Sin uso aún |
 | `loca.webp` | @loca_jerez — hamburguesería, Jerez |
-| `poderio.webp` | **FALTA** — Poderío Market (inicio, proyectos, plantilla) |
 
 ### Equipo — `assets/img/team/`
 
@@ -110,6 +109,7 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 | `js/filters.js` | Filtro del portfolio por categoría (en `proyectos.html`) | `[data-filters]`, `[data-filter]`, `[data-work-grid]`, `[data-cats]` |
 | `js/main.js` | Núcleo: splash/loader (máx. 1,5 s, solo home), nav sólido al hacer scroll, hamburguesa, scroll suave a anclas, volver arriba, barra de progreso, reveals on scroll, word reveal del hero, nav activo por sección, botones magnéticos, año dinámico. Define `KAOS.WA_URL`. Cada parte va protegida: si una falla, el resto sigue | Enlace de WhatsApp con `[data-wa]` en el HTML; si no existe usa el relleno `https://wa.me/34XXXXXXXXX` |
 | `js/modals.js` | Ventana de caso de estudio: imagen, categoría, título, descripción, resultados y botón. Cierre con ✕, ESC o clic fuera; devuelve el foco al cerrar | Disparadores `[data-modal-open]` con `data-modal-*`. Resultados en formato `valor::etiqueta\|valor::etiqueta` |
+| `js/accordion.js` | Acordeón accesible de servicios y del "escríbenos un mail" del contacto. Uno abierto por grupo; sin JS se ve todo desplegado | `[data-accordion]` con `.acc__btn[aria-controls]` y `.acc__panel` |
 | `js/lightbox.js` | Galería a pantalla completa del portfolio: flechas, teclado y cierre con ESC o clic fuera. Hace accesibles con teclado los elementos que la abren | Elementos `[data-lightbox]` (con `data-full`, `data-title`, `data-desc`) y contenedor `[data-lightbox-stage]` |
 
 ## Sistema de diseño (de `variables.css`)
@@ -117,32 +117,25 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 - Lema: "Fieles al caos creativo, porque el orden nunca hizo historia"
 - Verde principal `#135E51` · verde profundo `#0d423a` · verde noche `#08251f`
 - Acento único: salvia `#ABC685` (tinte claro `#cddeb3`)
-- Crema `#FFF6E7` · crema cálida `#f4e8cf` (manual antiguo). El branding nuevo usa crema `#FFFFF0`: pendiente decidir
-- Tipografías: **Fraunces** (display, serif) y **Space Grotesk** (cuerpo/UI), cargadas desde Google Fonts
+- Crema `#FFFFF0` (branding nuevo) · crema profunda `#F3F3DF`
+- Tipografías: **Inter Tight** (titulares, negrita) y **Space Grotesk** (cuerpo/UI), cargadas desde Google Fonts
 - Nota: los PNG del isotipo usan un crema distinto (`#FFFFF0`) al del CSS (`#FFF6E7`)
 
 ## Pendiente antes de publicar
-
-**Falta recibir**
-- [ ] Imagen `assets/img/portfolio/poderio.webp`
-- [ ] Página `proyecto-poderio.html` (se puede crear desde `proyecto-plantilla.html`)
 
 **Datos reales que sustituir**
 - [ ] Teléfono (`+34 000 000 000`) y WhatsApp (`34XXXXXXXXX`) en todas las páginas
 - [ ] NIF/CIF, razón social y domicilio (aviso legal y privacidad)
 - [ ] ID de Google Analytics 4 y claves de EmailJS
 - [ ] Métricas de inicio y de cada caso de estudio, testimonios verificables, precios de servicios
-- [ ] Ubicación del mapa de contacto (ahora "Sevilla")
 - [ ] Usuarios reales de Instagram, TikTok y LinkedIn
 
 **Cambios pedidos por el cliente** → ver `docs/encargo-kaos-web/CAMBIOS.md`
 
 **Mejoras detectadas (para QA)**
 - [ ] Imagen social 1200×630 en JPG y `apple-touch-icon.png` 180×180 (iOS no usa SVG)
-- [ ] Mapa de Google: cargar solo tras consentimiento o clic
 - [ ] `robots.txt`: quitar `Disallow: /assets/` para que Google vea las imágenes
 - [ ] No subir `proyecto-plantilla.html` (o ponerle `noindex`)
 - [ ] Contraste de `.svc__idx` (salvia sobre crema)
-- [ ] Bloque "Cómo trabajamos" de servicios sin versión móvil
 - [ ] Descripciones de Córdoba Mía y Palm Tribe en `proyectos.html`; unificar "Córdoba Mía" / "Cordobamia Market"
 - [ ] Activar redirección a HTTPS en `.htaccess` al publicar

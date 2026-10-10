@@ -14,7 +14,7 @@ Estos son los únicos datos que faltan por rellenar. Busca `TODO` en los archivo
 - Archivo: **todas las páginas `.html`**, busca `34XXXXXXXXX`.
 - Sustituye `34XXXXXXXXX` por el número real con prefijo de país, **sin** `+`, espacios ni guiones.
   - Ejemplo: para `+34 612 345 678` → `34612345678`.
-- Aparece en el botón flotante de cada página.
+- Aparece en el botón flotante, en el enlace "whatsapp ↗" del cierre de cada página y en "Háblanos por WhatsApp" (home y contacto).
 
 ### ✅ 1.2 EmailJS (para que el formulario envíe emails reales)
 1. Crea una cuenta gratis en **https://www.emailjs.com**.
@@ -76,7 +76,7 @@ Estos son los únicos datos que faltan por rellenar. Busca `TODO` en los archivo
 
 ## 3. Tras cada actualización (importante)
 
-Cuando edites un `.css` o `.js`, **sube el `?v=20260531`** que verás en las etiquetas `<link>`/`<script>` de los `.html` a una fecha nueva (ej. `?v=20260615`). Así los visitantes ven los cambios sin esperar a que caduque la caché. El `.htaccess` ya está configurado para esto.
+Cuando edites un `.css` o `.js`, **sube el `?v=20261010`** que verás en las etiquetas `<link>`/`<script>` de los `.html` a una fecha nueva (ej. `?v=20261115`). Así los visitantes ven los cambios sin esperar a que caduque la caché. El `.htaccess` ya está configurado para esto.
 
 ---
 

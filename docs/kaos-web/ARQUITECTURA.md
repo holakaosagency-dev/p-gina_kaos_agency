@@ -9,12 +9,11 @@ kaos-web/
 ├── servicios.html
 ├── proyectos.html             (filtros + lightbox)
 ├── proyecto-plantilla.html    Plantilla reutilizable de caso
-├── proyecto-poderio.html      Casos de estudio
-├── proyecto-debodas.html
+├── proyecto-debodas.html      Casos de estudio
 ├── proyecto-celia-zanon.html
 ├── proyecto-darss.html
 ├── manifiesto.html
-├── contacto.html              (formulario EmailJS + mapa)
+├── contacto.html              (canales + formulario EmailJS)
 ├── aviso-legal.html
 ├── politica-privacidad.html
 ├── politica-cookies.html
@@ -41,14 +40,15 @@ Namespace compartido `window.KAOS`. Cada `init*` envuelto en `safe()` (un fallo 
 | `modals.js` | Modal de caso/servicio desde `data-*` | — |
 | `contact.js` | Validación en tiempo real + envío EmailJS + estados | EmailJS SDK, main.js (WA_URL) |
 | `filters.js` | Filtro de portfolio por categoría (`data-cats`) | — |
+| `accordion.js` | Acordeón accesible (`[data-accordion]`): servicios y "escríbenos un mail". Uno abierto por grupo; sin JS todo queda desplegado | — |
 
 Orden de carga por página (al final del `<body>`, con `defer`): analytics → cookies → main → (counters/modals/lightbox/filters/contact según la página).
 
 ## Carga de scripts por página
-- **index**: analytics, cookies, main, counters, modals.
+- **index**: EmailJS SDK, analytics, cookies, main, counters, modals, accordion, contact.
 - **proyectos**: analytics, cookies, main, filters, lightbox.
-- **contacto**: EmailJS SDK, analytics, cookies, main, contact.
-- **servicios**: analytics, cookies, main, modals.
+- **contacto**: EmailJS SDK, analytics, cookies, main, accordion, contact.
+- **servicios**: analytics, cookies, main, modals, accordion.
 - **resto**: analytics, cookies, main.
 
 ## Decisiones técnicas

@@ -1,5 +1,7 @@
 # Cambios pedidos para la web de KAOS
 
+> **Estado (octubre 2026): aplicados.** Decisiones del cliente: crema `#FFFFF0` del branding nuevo · email `contacto@holakaosagency.com` · contacto y cierre al final de la home, y el cierre sustituye al footer en todas las páginas · titulares en grotesca negrita como las referencias · Poderío Market eliminado de la web.
+
 Resumen de `CAMBIOS_WEB.docx` y `SERVICIOS.docx`, comparado con lo que ya hay en `kaos-web/`.
 
 Vídeo de referencia de los servicios: `referencias/ref-servicios-video.mov` (fotogramas en `referencias/ref-servicios-video-fotogramas.jpg`). Original en Google Drive: https://drive.google.com/file/d/1nrco5GCksW4zTWaYx2EHls3QDMEpzXYZ/view?usp=sharing
@@ -64,11 +66,13 @@ Vídeo de referencia de los servicios: `referencias/ref-servicios-video.mov` (fo
 **Estado actual**
 - El footer actual es verde oscuro, en 4 columnas (mapa, contacto, redes) y con el lema
 
-## Dudas abiertas
+## Cómo se ha aplicado
 
-1. ¿El contacto + cierre va al final de **la home** (sustituyendo el "¿Le damos forma a tu caos?") o solo en `contacto.html`?
-2. ¿El cierre sustituye al footer actual en todas las páginas o se añade encima?
-3. La referencia del contacto y la de "Somos" usan una grotesca negrita en vez de la serif Fraunces. ¿Cambiamos los titulares a ese estilo o mantenemos Fraunces?
+- **Somos**: bloque centrado a pantalla casi completa, verde con texto crema, etiqueta "// Sobre nosotros", titular enorme y botón "Hablemos" que baja al contacto
+- **Servicios**: acordeón de 8 en la home y en `servicios.html` (con las tarifas orientativas dentro de cada uno); "Diseño web" e "Influencer marketing" renombrados
+- **Contacto**: sección "¿Hablamos?" al final de la home y como contenido de `contacto.html` (allí el formulario arranca abierto). Se ha quitado el mapa de Google
+- **Cierre**: "instagram ↗ · tiktok ↗ · whatsapp ↗", "KAOSAGENCY™" y "© año" en todas las páginas, con email y enlaces legales en pequeño
+- **Branding**: logotipo e isotipo oficiales en vector (nav, splash, favicon), crema `#FFFFF0`, titulares en Inter Tight Bold
 
 ## Branding
 
