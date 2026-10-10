@@ -11,7 +11,9 @@ Las fotos llegaron en WebP y el HTML se ha ajustado para usarlas así (pesan men
 | Archivo | Qué es | Notas |
 |---|---|---|
 | `kaos-lifestyle.webp` | Mockup de libreta con "KAOS AGENCY", 1024×1024 | Se usa en inicio, contacto, servicios y como imagen social (OG) |
-| `isologo.svg` | Isotipo "K" en vector, `currentColor` | El HTML lleva el SVG en línea; el archivo avisa de que es una reinterpretación del vector oficial |
+| `logotipo-kaos.svg` | **Logotipo oficial** "KAOS / AGENCY" en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Aún sin uso en el HTML |
+| `isotipo-k.svg` | **Isotipo oficial** K curva en vector, `currentColor` | Extraído de `NUEVO_BRANDING.pdf`. Aún sin uso: el HTML lleva en línea la versión reinterpretada |
+| `isologo.svg` | K "reinterpretada" con polígonos rectos | Es la que usa hoy la web (en línea en nav, footer, splash y favicon). Sustituir por `isotipo-k.svg` |
 | `kaos-oficina.jpg` | Foto de trabajo: persona del equipo al teléfono tomando notas en la agenda, con sudadera K y portátil, 1333×2000 | Sin uso aún. Encajaría en "El estudio" (inicio) o en contacto |
 | `isotipo-k-fondo-verde.png` | K crema sobre verde, 1920×1080 | Sin uso en el HTML |
 | `isotipo-k-fondo-crema.png` | K verde sobre crema `#FFFFF0`, 1920×1080 | Sin uso. Su crema no es el del CSS (`#FFF6E7`) |
@@ -115,7 +117,7 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 - Lema: "Fieles al caos creativo, porque el orden nunca hizo historia"
 - Verde principal `#135E51` · verde profundo `#0d423a` · verde noche `#08251f`
 - Acento único: salvia `#ABC685` (tinte claro `#cddeb3`)
-- Crema `#FFF6E7` · crema cálida `#f4e8cf`
+- Crema `#FFF6E7` · crema cálida `#f4e8cf` (manual antiguo). El branding nuevo usa crema `#FFFFF0`: pendiente decidir
 - Tipografías: **Fraunces** (display, serif) y **Space Grotesk** (cuerpo/UI), cargadas desde Google Fonts
 - Nota: los PNG del isotipo usan un crema distinto (`#FFFFF0`) al del CSS (`#FFF6E7`)
 
@@ -132,6 +134,8 @@ JS vanilla, sin dependencias propias. Comparten el objeto global `window.KAOS`.
 - [ ] Métricas de inicio y de cada caso de estudio, testimonios verificables, precios de servicios
 - [ ] Ubicación del mapa de contacto (ahora "Sevilla")
 - [ ] Usuarios reales de Instagram, TikTok y LinkedIn
+
+**Cambios pedidos por el cliente** → ver `docs/encargo-kaos-web/CAMBIOS.md`
 
 **Mejoras detectadas (para QA)**
 - [ ] Imagen social 1200×630 en JPG y `apple-touch-icon.png` 180×180 (iOS no usa SVG)

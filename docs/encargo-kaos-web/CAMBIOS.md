@@ -2,7 +2,7 @@
 
 Resumen de `CAMBIOS_WEB.docx` y `SERVICIOS.docx`, comparado con lo que ya hay en `kaos-web/`.
 
-Vídeo de referencia de los servicios (Google Drive): https://drive.google.com/file/d/1nrco5GCksW4zTWaYx2EHls3QDMEpzXYZ/view?usp=sharing. No se puede ver desde aquí; hace falta describirlo o pasar capturas.
+Vídeo de referencia de los servicios: `referencias/ref-servicios-video.mov` (fotogramas en `referencias/ref-servicios-video-fotogramas.jpg`). Original en Google Drive: https://drive.google.com/file/d/1nrco5GCksW4zTWaYx2EHls3QDMEpzXYZ/view?usp=sharing
 
 ## 1. Bloque "Somos KAOS Agency" (antes de los servicios)
 
@@ -35,6 +35,13 @@ Vídeo de referencia de los servicios (Google Drive): https://drive.google.com/f
 - `servicios.html` tiene los 8 con estos textos; `index.html` muestra solo 4 y un botón "Ver los 8 servicios"
 - Falta: renombrar los dos servicios marcados y adaptar el diseño al vídeo de referencia
 
+**Cómo es el vídeo de referencia** (web de Teampacto, sección de servicios)
+- Etiqueta pequeña "//servicios" arriba a la izquierda y número de sección ("03") a la derecha
+- Titular grande en grotesca negrita, minúsculas: "creatividad, rrss y marketing"
+- Debajo, una **lista en acordeón**: cada servicio en una fila con su nombre en negrita grande, una línea fina de separación y un "+" a la derecha
+- Al pulsar un servicio se despliega su descripción debajo (solo uno abierto a la vez); el "+" cambia de estado
+- Fondo blanco/claro, mucho aire, sin tarjetas ni iconos
+
 ## 3. Contacto
 
 **Qué piden**
@@ -61,5 +68,15 @@ Vídeo de referencia de los servicios (Google Drive): https://drive.google.com/f
 
 1. ¿El contacto + cierre va al final de **la home** (sustituyendo el "¿Le damos forma a tu caos?") o solo en `contacto.html`?
 2. ¿El cierre sustituye al footer actual en todas las páginas o se añade encima?
-3. ¿Cómo es el vídeo de referencia de los servicios? (capturas o descripción)
-4. La referencia del contacto y la de "Somos" usan una grotesca negrita en vez de la serif Fraunces. ¿Cambiamos los titulares a ese estilo o mantenemos Fraunces?
+3. La referencia del contacto y la de "Somos" usan una grotesca negrita en vez de la serif Fraunces. ¿Cambiamos los titulares a ese estilo o mantenemos Fraunces?
+
+## Branding
+
+- `branding/NUEVO_BRANDING.pdf` (y `.docx`): branding vigente. Logotipo "KAOS" en **Loubag** con "AGENCY" espaciado en **Poppins**, e isotipo K curvo. Verde `#135E51` y crema `#FFFFF0`; versiones sobre verde, crema y negro
+- `branding/Manual_de_Identidad_Visual_ANTIGUO.pdf`: manual anterior (logo "KΛŌS" tipo stencil, K recta, tipografías Neue Montreal Bold / Sharp Grotesk / Dream Orphans, crema `#FFF6E7`, salvia `#ABC685`). El CSS de la web cita este manual
+- Del PDF nuevo se han extraído en vector `kaos-web/assets/img/brand/logotipo-kaos.svg` e `isotipo-k.svg`
+
+### Diferencias con la web actual
+- La web usa un SVG de la K "reinterpretado" (polígonos rectos) en nav, footer, splash y favicon; el oficial es curvo → sustituir
+- La web escribe "KAOS Agency" con Fraunces; el logotipo oficial es Loubag + Poppins → usar el SVG oficial
+- Crema: la web usa `#FFF6E7` (manual antiguo); el branding nuevo usa `#FFFFF0` → confirmar cuál manda
