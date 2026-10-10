@@ -42,6 +42,16 @@ WebP con fondo transparente, 970×2000 (salvo el de Jehosua: 1601×2000, iPhone 
 | `assets/img/personas/retrato-celia-zanon.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Celia Zanón (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
 | `assets/img/personas/retrato-jehosua-vogele.jpg` | Retrato en círculo, 1125×2000 | Misma foto que el perfil de Jehosua Vögele (ver portfolio). Formato story con fondo desenfocado. Pendiente confirmar uso |
 
+## Equipo Kaos
+
+Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pendiente: nombre y rol de cada persona para renombrar.
+
+| Archivo | Qué es |
+|---|---|
+| `assets/img/equipo/equipo-1.jpg` | Chica de perfil mirando a cámara, sonriendo; se ve "KAOS AGENCY" en la espalda |
+| `assets/img/equipo/equipo-2.jpg` | Chico de frente con brazos cruzados; K del isotipo en el pecho |
+| `assets/img/equipo/equipo-3.jpg` | Chica de frente con brazos cruzados, gesto divertido; K en el pecho |
+
 ## Colores detectados
 
 - Verde marca: `#135E51`
