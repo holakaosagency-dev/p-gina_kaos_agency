@@ -52,10 +52,29 @@ Fotos de estudio sobre fondo blanco, todas con sudadera negra de Kaos Agency. Pe
 | `assets/img/equipo/equipo-2.jpg` | Chico de frente con brazos cruzados; K del isotipo en el pecho |
 | `assets/img/equipo/equipo-3.jpg` | Chica de frente con brazos cruzados, gesto divertido; K en el pecho |
 
-## Colores detectados
+## CSS
 
-- Verde marca: `#135E51`
-- Crema: `#FFFFF0`
+Orden de carga recomendado: `variables.css` → `main.css` → `components.css`.
+
+| Archivo | Qué contiene |
+|---|---|
+| `css/variables.css` | Design system: colores del Manual de Identidad, tipografías, escala fluida, espaciado, radios, motion, sombras, capas. Temas `.theme-dark` y `.theme-night` |
+| `css/main.css` | Reset, tipografía, layout, botones, reveal on scroll, hero, marquesina, "Somos Kaos", servicios, métricas, equipo, testimonios, CTA final, split imagen+texto, formulario, cabecera de páginas interiores, páginas legales |
+| `css/components.css` | Barra de progreso, nav (con menú móvil), tarjetas de servicio y proyecto, filtros de portfolio, tarjeta de equipo, testimonios, footer, WhatsApp flotante, volver arriba, modal de proyecto, lightbox, banner de cookies, splash/loader |
+
+## Sistema de diseño (de `variables.css`)
+
+- Lema: "Fieles al caos creativo, porque el orden nunca hizo historia"
+- Verde principal `#135E51` · verde profundo `#0d423a` · verde noche `#08251f`
+- Acento único: salvia `#ABC685` (tinte claro `#cddeb3`)
+- Crema `#FFF6E7` · crema cálida `#f4e8cf`
+- Tipografías: **Fraunces** (display, serif) y **Space Grotesk** (cuerpo/UI). Pendiente: cómo se cargan (¿Google Fonts en el HTML o archivos locales?)
+- Nota: los PNG del isotipo usan un crema distinto (`#FFFFF0`) al del CSS (`#FFF6E7`)
+
+## Pistas sobre lo que falta (según el CSS)
+
+- Páginas: inicio (hero, marquesina, servicios, métricas, equipo, testimonios, CTA), `servicios.html` (citada en un comentario), páginas interiores y legales, contacto con formulario
+- JS para: splash, nav al hacer scroll y menú móvil, barra de progreso, reveal y word reveal, contadores, filtros de portfolio, modal, lightbox, cookies, volver arriba, formulario
 
 ## Pendiente
 
