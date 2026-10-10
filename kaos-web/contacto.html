@@ -22,9 +22,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..800;1,400..800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/variables.css?v=20261010">
-<link rel="stylesheet" href="css/main.css?v=20261010">
-<link rel="stylesheet" href="css/components.css?v=20261010">
+<link rel="stylesheet" href="css/variables.css?v=20261011">
+<link rel="stylesheet" href="css/main.css?v=20261011">
+<link rel="stylesheet" href="css/components.css?v=20261011">
 </head>
 <body class="is-ready">
 
@@ -56,7 +56,7 @@
       <a href="contacto.html" class="is-active">Contacto</a>
     </nav>
     <div class="nav__actions">
-      <a href="#mail-b" class="btn btn--accent" data-magnetic>Hablamos <span class="arrow">→</span></a>
+      <a href="#contacto" class="btn btn--accent" data-magnetic>Hablamos <span class="arrow">→</span></a>
       <button class="hamburger" data-burger aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -75,121 +75,66 @@
 </header>
 
 <main>
-<section class="section bg-cream contact" style="padding-top:calc(var(--nav-h) + clamp(3rem,8vw,6rem))">
-  <div class="wrap">
-    <div class="reveal">
-      <p class="kicker">// Contacto</p>
+<section class="section bg-cream contact" id="contacto" style="padding-top:calc(var(--nav-h) + clamp(3rem,8vw,6rem))">
+  <div class="wrap contact__inner">
+    <div class="contact__head">
+      <p class="kicker is-center">// Contacto</p>
       <h1 class="contact__title">¿Hablamos?</h1>
-      <p class="contact__lead">Contacta por el canal que te sea más cómodo.</p>
+      <p class="contact__lead">Cuéntanos qué necesitas y te respondemos en menos de 24h.</p>
     </div>
-    <div class="contact__grid">
-      <div class="contact__media reveal">
-        <img src="assets/img/brand/kaos-lifestyle.webp" alt="Libreta con el logotipo de KAOS Agency" width="1024" height="1024" loading="lazy">
-      </div>
-      <div class="contact__channels reveal" data-delay="1">
-        <!-- TODO: Reemplazar 34XXXXXXXXX con el número real de WhatsApp de KAOS -->
-        <a class="channel" href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20vuestros%20servicios" target="_blank" rel="noopener"><span class="channel__arrow" aria-hidden="true">→</span>Háblanos por WhatsApp</a>
-        <!-- Los dos formularios llegan al correo de KAOS vía EmailJS (ver js/contact.js) -->
-        <div class="channel-forms" data-accordion>
-          <h3 class="acc__head"><button class="channel acc__btn" type="button" id="call-b" aria-expanded="false" aria-controls="call-p"><span class="channel__arrow" aria-hidden="true">→</span>Te llamamos nosotros</button></h3>
-          <div class="acc__panel" id="call-p" role="region" aria-labelledby="call-b">
-            <div class="acc__inner">
-              <form class="form form--line" data-contact-form="callback" data-ok-msg="¡Recibido! Te llamamos muy pronto. 📞" novalidate>
-                <input type="hidden" name="service" value="Quiere que le llaméis">
-                <div class="form__row">
-                  <div class="field">
-                    <label for="c-name">nombre *</label>
-                    <input id="c-name" name="from_name" type="text" required minlength="2" autocomplete="name">
-                    <span class="err"></span>
-                  </div>
-                  <div class="field">
-                    <label for="c-phone">teléfono *</label>
-                    <input id="c-phone" name="phone" type="tel" required autocomplete="tel" pattern="[0-9+\s().-]{6,}">
-                    <span class="err"></span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label for="c-when">¿cuándo te va mejor? *</label>
-                  <select id="c-when" name="message" required>
-                    <option value="" selected disabled>Elige una franja</option>
-                    <option>Por la mañana</option>
-                    <option>Por la tarde</option>
-                    <option>Me da igual</option>
-                  </select>
-                  <span class="err"></span>
-                </div>
-                <div class="field field--check">
-                  <input id="c-privacy" type="checkbox" required>
-                  <label for="c-privacy">He leído y acepto la <a class="link-underline" href="politica-privacidad.html">política de privacidad</a>. *</label>
-                </div>
-                <div class="form__submit">
-                  <button type="submit" class="btn btn--accent" data-submit><span data-submit-label>Que me llamen <span class="arrow">→</span></span></button>
-                  <span class="form__note">Te llamamos en &lt; 24h.</span>
-                </div>
-                <p class="form__status" data-form-status role="status" aria-live="polite"></p>
-              </form>
-            </div>
-          </div>
-          <h3 class="acc__head"><button class="channel acc__btn" type="button" id="mail-b" aria-expanded="true" aria-controls="mail-p"><span class="channel__arrow" aria-hidden="true">→</span>Escríbenos un mail</button></h3>
-          <div class="acc__panel" id="mail-p" role="region" aria-labelledby="mail-b">
-            <div class="acc__inner">
-              <!-- Las variables del formulario (name="") deben coincidir con las de tu plantilla EmailJS -->
-              <form class="form form--line" data-contact-form novalidate>
-                <div class="form__row">
-                  <div class="field">
-                    <label for="f-name">nombre *</label>
-                    <input id="f-name" name="from_name" type="text" required minlength="2" autocomplete="name">
-                    <span class="err"></span>
-                  </div>
-                  <div class="field">
-                    <label for="f-email">email *</label>
-                    <input id="f-email" name="from_email" type="email" required autocomplete="email">
-                    <span class="err"></span>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="field">
-                    <label for="f-phone">teléfono (opcional)</label>
-                    <input id="f-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+\s().-]{6,}">
-                    <span class="err"></span>
-                  </div>
-                  <div class="field">
-                    <label for="f-service">¿qué te interesa? *</label>
-                    <select id="f-service" name="service" required>
-                      <option value="" selected disabled>Elige un servicio</option>
-                      <option>Creación de contenido</option>
-                      <option>Gestión de RRSS</option>
-                      <option>Diseño web</option>
-                      <option>Estrategia digital</option>
-                      <option>Fotos corporativas</option>
-                      <option>Influencer marketing</option>
-                      <option>Branding</option>
-                      <option>Consultoría</option>
-                      <option>Otro / no lo tengo claro</option>
-                    </select>
-                    <span class="err"></span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label for="f-message">cuéntanos tu caos *</label>
-                  <textarea id="f-message" name="message" required minlength="10"></textarea>
-                  <span class="err"></span>
-                </div>
-                <div class="field field--check">
-                  <input id="f-privacy" type="checkbox" required>
-                  <label for="f-privacy">He leído y acepto la <a class="link-underline" href="politica-privacidad.html">política de privacidad</a>. *</label>
-                </div>
-                <div class="form__submit">
-                  <button type="submit" class="btn btn--accent" data-submit data-magnetic><span data-submit-label>Enviar mensaje <span class="arrow">→</span></span></button>
-                  <span class="form__note">Respuesta en &lt; 24h.</span>
-                </div>
-                <p class="form__status" data-form-status role="status" aria-live="polite"></p>
-              </form>
-            </div>
-          </div>
+    <!-- Llega al correo de KAOS vía EmailJS (ver js/contact.js) -->
+    <!-- Las variables del formulario (name="") deben coincidir con las de tu plantilla EmailJS -->
+    <form class="form form--line" data-contact-form novalidate>
+      <div class="form__row">
+        <div class="field">
+          <label for="f-name">nombre *</label>
+          <input id="f-name" name="from_name" type="text" required minlength="2" autocomplete="name">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-email">email *</label>
+          <input id="f-email" name="from_email" type="email" required autocomplete="email">
+          <span class="err"></span>
         </div>
       </div>
-    </div>
+      <div class="form__row">
+        <div class="field">
+          <label for="f-phone">teléfono (opcional)</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+\s().-]{6,}">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-service">¿qué te interesa? *</label>
+          <select id="f-service" name="service" required>
+            <option value="" selected disabled>Elige un servicio</option>
+            <option>Creación de contenido</option>
+            <option>Gestión de RRSS</option>
+            <option>Diseño web</option>
+            <option>Estrategia digital</option>
+            <option>Fotos corporativas</option>
+            <option>Influencer marketing</option>
+            <option>Branding</option>
+            <option>Consultoría</option>
+            <option>Otro / no lo tengo claro</option>
+          </select>
+          <span class="err"></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-message">cuéntanos tu caos *</label>
+        <textarea id="f-message" name="message" required minlength="10"></textarea>
+        <span class="err"></span>
+      </div>
+      <div class="field field--check">
+        <input id="f-privacy" type="checkbox" required>
+        <label for="f-privacy">He leído y acepto la <a class="link-underline" href="politica-privacidad.html">política de privacidad</a>. *</label>
+      </div>
+      <div class="form__submit">
+        <button type="submit" class="btn btn--accent" data-submit data-magnetic><span data-submit-label>Enviar mensaje <span class="arrow">→</span></span></button>
+        <span class="form__note">Respuesta en &lt; 24h.</span>
+      </div>
+      <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
 </main>
@@ -239,10 +184,9 @@
 
 <!-- EmailJS SDK (necesario para enviar el formulario). Más info en js/contact.js -->
 <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script defer src="js/analytics.js?v=20261010"></script>
-<script defer src="js/cookies.js?v=20261010"></script>
-<script defer src="js/main.js?v=20261010"></script>
-<script defer src="js/accordion.js?v=20261010"></script>
-<script defer src="js/contact.js?v=20261010"></script>
+<script defer src="js/analytics.js?v=20261011"></script>
+<script defer src="js/cookies.js?v=20261011"></script>
+<script defer src="js/main.js?v=20261011"></script>
+<script defer src="js/contact.js?v=20261011"></script>
 </body>
 </html>

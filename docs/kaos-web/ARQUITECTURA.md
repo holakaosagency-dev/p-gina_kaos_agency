@@ -13,7 +13,7 @@ kaos-web/
 ├── proyecto-celia-zanon.html
 ├── proyecto-darss.html
 ├── manifiesto.html
-├── contacto.html              (canales + formulario EmailJS)
+├── contacto.html              (formulario EmailJS)
 ├── aviso-legal.html
 ├── politica-privacidad.html
 ├── politica-cookies.html
@@ -34,20 +34,20 @@ Namespace compartido `window.KAOS`. Cada `init*` envuelto en `safe()` (un fallo 
 |---|---|---|
 | `analytics.js` | Carga GA4 condicional (`window.KAOS.loadAnalytics`) | — |
 | `cookies.js` | Banner RGPD + consentimiento en localStorage; activa/desactiva GA | analytics.js |
-| `main.js` | Loader, nav sticky, hamburguesa, scroll suave, volver-arriba, barra progreso, reveals (IntersectionObserver + red de seguridad 6s), scrollspy, magnético, año, expone `WA_URL` | — |
+| `main.js` | Nav sticky, hamburguesa, scroll suave, volver-arriba, barra progreso, reveals (IntersectionObserver + red de seguridad 6s), scrollspy, magnético, año, expone `WA_URL` | — |
 | `counters.js` | Contadores animados al entrar en viewport | — |
 | `lightbox.js` | Visor de portfolio (teclado + ratón, prev/next, ESC) | — |
 | `modals.js` | Modal de caso/servicio desde `data-*` | — |
 | `contact.js` | Validación en tiempo real + envío EmailJS + estados | EmailJS SDK, main.js (WA_URL) |
 | `filters.js` | Filtro de portfolio por categoría (`data-cats`) | — |
-| `accordion.js` | Acordeón accesible (`[data-accordion]`): servicios y "escríbenos un mail". Uno abierto por grupo; sin JS todo queda desplegado | — |
+| `accordion.js` | Acordeón accesible (`[data-accordion]`) de servicios. Uno abierto por grupo; sin JS todo queda desplegado | — |
 
 Orden de carga por página (al final del `<body>`, con `defer`): analytics → cookies → main → (counters/modals/lightbox/filters/contact según la página).
 
 ## Carga de scripts por página
 - **index**: EmailJS SDK, analytics, cookies, main, counters, modals, accordion, contact.
 - **proyectos**: analytics, cookies, main, filters, lightbox.
-- **contacto**: EmailJS SDK, analytics, cookies, main, accordion, contact.
+- **contacto**: EmailJS SDK, analytics, cookies, main, contact.
 - **servicios**: analytics, cookies, main, modals, accordion.
 - **resto**: analytics, cookies, main.
 

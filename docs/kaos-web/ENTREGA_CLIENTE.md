@@ -14,7 +14,7 @@ Estos son los únicos datos que faltan por rellenar. Busca `TODO` en los archivo
 - Archivo: **todas las páginas `.html`**, busca `34XXXXXXXXX`.
 - Sustituye `34XXXXXXXXX` por el número real con prefijo de país, **sin** `+`, espacios ni guiones.
   - Ejemplo: para `+34 612 345 678` → `34612345678`.
-- Aparece en el botón flotante, en el enlace "whatsapp ↗" del cierre de cada página y en "Háblanos por WhatsApp" (home y contacto).
+- Aparece en el botón flotante, en el enlace "whatsapp ↗" del cierre de cada página .
 
 ### ✅ 1.2 EmailJS (para que el formulario envíe emails reales)
 1. Crea una cuenta gratis en **https://www.emailjs.com**.
@@ -45,7 +45,7 @@ Estos son los únicos datos que faltan por rellenar. Busca `TODO` en los archivo
 
 ### ✅ 1.5 Datos legales (importante por ley)
 - En **`aviso-legal.html`** y **`politica-privacidad.html`** rellena los `TODO`: razón social, NIF/CIF y domicilio.
-- Ya no se muestra teléfono en la web: en su lugar está el formulario "Te llamamos nosotros", que llega al mismo correo que el de "Escríbenos un mail".
+- Ya no se muestra teléfono en la web: el contacto es un único formulario (con teléfono opcional) que llega al correo de KAOS.
 
 ### ✅ 1.6 Dominio en las URLs (SEO)
 - Si el dominio final **no** es `holakaosagency.com`, reemplázalo en:

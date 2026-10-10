@@ -87,12 +87,31 @@ window.KAOS = window.KAOS || {};
       var el = document.querySelector(id);
       if (!el) return;
       e.preventDefault();
-      var navH = 70;
+      // Deja la sección justo debajo del menú fijo (su altura real + un respiro)
+      var nav = document.querySelector("[data-nav]");
+      var navH = (nav ? nav.offsetHeight : 76) + 12;
       window.scrollTo({
         top: el.getBoundingClientRect().top + window.scrollY - navH,
         behavior: reduced ? "auto" : "smooth"
       });
     });
+  }
+
+  /* ---------- Llegada desde otra página con #ancla ----------
+     El navegador salta al ancla antes de que el acordeón se cierre y las
+     fuentes carguen; al terminar de cargar, recolocamos bajo el menú. */
+  function initHashLanding() {
+    if (!location.hash || location.hash.length < 2) return;
+    function land() {
+      var el = null;
+      try { el = document.querySelector(location.hash); } catch (e) {}
+      if (!el) return;
+      var nav = document.querySelector("[data-nav]");
+      var navH = (nav ? nav.offsetHeight : 76) + 12;
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - navH, behavior: "instant" });
+    }
+    if (document.readyState === "complete") setTimeout(land, 0);
+    else window.addEventListener("load", function () { setTimeout(land, 0); });
   }
 
   /* ---------- Reveals on scroll (IntersectionObserver + red de seguridad) ---------- */
@@ -187,6 +206,7 @@ window.KAOS = window.KAOS || {};
     safe(initScrollSpy, "initScrollSpy");
     safe(initMagnetic, "initMagnetic");
     safe(initYear, "initYear");
+    safe(initHashLanding, "initHashLanding");
   }
 
   if (document.readyState !== "loading") boot();

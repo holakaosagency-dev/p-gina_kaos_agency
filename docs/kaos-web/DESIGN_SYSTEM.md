@@ -36,7 +36,7 @@ Regla: un solo acento (salvia), usado con intención. Nada de degradados genéri
 - Animaciones funcionales (hover, reveal, marquesina, contadores) **no** se desactivan con `prefers-reduced-motion`; solo lo intrusivo (pulso del scroll).
 
 ## Componentes clave
-Loader, nav transparente→sólido, hero full-screen con reveal de palabras, marquesina CSS, bloque "Somos" centrado en verde, **acordeón de servicios** (nombre grande + línea + "+"), **contacto "¿Hablamos?"** con canales (WhatsApp, teléfono, mail desplegable con formulario de líneas), tarjetas de proyecto/equipo/testimonio, modal de caso, lightbox, banner de cookies, WhatsApp flotante, botón volver-arriba, barra de progreso y **cierre "KAOSAGENCY™"** (sustituye al footer).
+Nav transparente→sólido, hero full-screen (sin pantalla de carga ni animaciones de entrada: el contenido se ve al instante), marquesina CSS, bloque "Somos" centrado en verde, **acordeón de servicios** (nombre grande + línea + "+"), **contacto "¿Hablamos?"** centrado con un único formulario de líneas, tarjetas de proyecto/equipo/testimonio, modal de caso, lightbox, banner de cookies, WhatsApp flotante, botón volver-arriba, barra de progreso y **cierre "KAOSAGENCY™"** (sustituye al footer).
 
 ## Prohibido (respetado)
 Degradados genéricos, sombras por todas partes, radios excesivos, emojis como decoración, look de plantilla Elementor/WordPress.

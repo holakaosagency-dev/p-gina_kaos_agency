@@ -72,8 +72,10 @@ Vídeo de referencia de los servicios: `referencias/ref-servicios-video.mov` (fo
 - **Servicios**: acordeón de 8 en la home y en `servicios.html` (con las tarifas orientativas dentro de cada uno); "Diseño web" e "Influencer marketing" renombrados
 - **Contacto**: sección "¿Hablamos?" al final de la home y como contenido de `contacto.html` (allí el formulario arranca abierto). Se ha quitado el mapa de Google
 - **Cierre**: "instagram ↗ · tiktok ↗ · whatsapp ↗", "KAOSAGENCY™" y "© año" en todas las páginas, con email y enlaces legales en pequeño
-- **Equipo**: solo Susana y Óscar (Ainhoa ya no forma parte de la agencia; su foto se ha eliminado)
-- **Te llamamos nosotros**: sustituye a "Llámanos al teléfono". Formulario (nombre, teléfono, franja horaria) que llega al correo de KAOS con la misma plantilla de EmailJS que el de mail
+- **Equipo**: solo Susana y Óscar, centrados (Ainhoa ya no forma parte de la agencia; sus fotos se han eliminado)
+- **Contacto**: solo el titular "¿Hablamos?" y un formulario (nombre, email, teléfono opcional, servicio, mensaje) que llega al correo de KAOS. Sin WhatsApp, teléfono ni imagen en esa sección
+- **Velocidad**: sin pantalla de carga ni animaciones de entrada con retraso
+- **Botones**: en la home, "Hablamos"/"Contacto" bajan a la sección de contacto y "Equipo" al equipo, siempre justo debajo del menú (también al llegar desde otra página)
 - **Branding**: logotipo e isotipo oficiales en vector (nav, splash, favicon), crema `#FFFFF0`, titulares en Inter Tight Bold
 
 ## Branding
