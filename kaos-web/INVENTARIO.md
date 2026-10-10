@@ -1,6 +1,6 @@
 # Inventario de archivos — kaos-web
 
-Todo lo recopilado de la web de KAOS Agency, ordenado con las rutas que usa el HTML. Para verla en local: `npx -y serve kaos-web -l 8765` desde la raíz del repo.
+Todo lo recopilado de la web de KAOS Agency, ordenado con las rutas que usa el HTML. La documentación del proyecto (arquitectura, design system, guía de entrega e informe de QA) está en `docs/kaos-web/`; el encargo de cambios y el branding, en `docs/encargo-kaos-web/`. Para verla en local: `npx -y serve kaos-web -l 8765` desde la raíz del repo.
 
 ## Imágenes
 
@@ -51,9 +51,9 @@ Fotos de estudio sobre fondo blanco con sudadera de KAOS, 1333×2000.
 
 | Archivo | Qué es |
 |---|---|
-| `assets/img/clientes/logo-bonilla-nutricion.png` | Logo negro, fondo transparente |
-| `assets/img/clientes/logo-cordobamia-market.jpg` | Logo en formato story; tiene una línea cortada en el borde inferior |
-| `assets/img/clientes/logo-loca-hamburguesa.png` | Logo rojo sobre blanco |
+| `assets/img/clients/logo-bonilla-nutricion.png` | Logo negro, fondo transparente |
+| `assets/img/clients/logo-cordobamia-market.jpg` | Logo en formato story; tiene una línea cortada en el borde inferior |
+| `assets/img/clients/logo-loca-hamburguesa.png` | Logo rojo sobre blanco |
 | `assets/img/personas/retrato-celia-zanon.jpg` | Misma foto que su perfil, formato story |
 | `assets/img/personas/retrato-jehosua-vogele.jpg` | Misma foto que su perfil, formato story |
 
