@@ -8,6 +8,7 @@
 - Colores: fondo #121417 (casi negro), acento #C6F432 (lima, **el único acento** de cada vídeo), claro #F4F3EE (blanco roto), apagado #8A8F98.
 - Tipografías: titulares Manrope 800, texto y subtítulos Inter.
 - Logo: todavía no hay archivo; en las tarjetas se escribe «ale.ingenia» con la tipografía de la marca.
+- Usuario: **@ale.ingenia** en todas las redes (no @ale_ia).
 - Plataformas: TikTok (principal) e Instagram Reels (reciclaje). Formato 1080×1920.
 
 ## Estilo en pantalla
