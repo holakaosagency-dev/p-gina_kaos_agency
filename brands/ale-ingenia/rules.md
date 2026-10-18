@@ -30,5 +30,8 @@
 - Memes: sí, hasta 2 por vídeo y de tamaño medio, solo de humor de estudiante y con derechos claros. Nunca en el CTA ni en el final.
 - Música: no se incrusta sin licencia; el audio se elige en la app al publicar. Tu voz va por delante de los audios virales.
 
+- Guiones por semana: `guiones/semana-1.md` (y los siguientes en la misma carpeta).
+
 ## Reglas de las revisiones
 <!-- revisions: brand.py rule adds dated rules at the end of this section; the heading may be in any language -->
+- 2026-10-18: En subtítulos «IA» se escribe siempre así (nunca «y a», «ia» ni «Ía»); «Ingeniería en Inteligencia Artificial» con mayúsculas.
