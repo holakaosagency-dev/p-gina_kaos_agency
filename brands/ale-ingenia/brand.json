@@ -1,0 +1,105 @@
+{
+ "schema": 2,
+ "slug": "ale-ingenia",
+ "name": "ale.ingenia",
+ "description": "Marca personal: estudiante de Ingeniería en IA que cuenta la carrera y la IA desde dentro, sin tecnicismos. TikTok + Instagram Reels. Público: futuros estudiantes (16-19), estudiantes de IA/Informática/Datos y curiosos sin perfil técnico.",
+ "language": "es",
+ "colors": {
+  "primary": "#121417",
+  "accent": "#C6F432",
+  "light": "#F4F3EE",
+  "text_on_primary": "#F4F3EE",
+  "text_on_accent": "#121417",
+  "extra": {
+   "muted": "#8A8F98",
+   "marker": "#C6F432",
+   "ink": "#121417"
+  }
+ },
+ "fonts": {
+  "heading": {
+   "family": "Manrope",
+   "weights": [
+    600,
+    800
+   ],
+   "source": "google"
+  },
+  "body": {
+   "family": "Inter",
+   "weights": [
+    500,
+    600,
+    700,
+    800
+   ],
+   "source": "google"
+  }
+ },
+ "logos": {},
+ "lut": null,
+ "tagline": "Te explico la IA mientras la aprendo",
+ "guide": null,
+ "rules": "rules.md",
+ "styles": {
+  "default": "marker",
+  "allowed": [
+   "marker",
+   "brand",
+   "minimal",
+   "editorial",
+   "bold"
+  ]
+ },
+ "subtitles_default": "accent",
+ "motion": null,
+ "tone": {
+  "preset": "friendly"
+ },
+ "voice": "Cercana y con humor, sin infantilizar. Honesta con lo que aún no domina. Traduce la IA del lenguaje de ingeniería al de la calle. Crítica con el hype.",
+ "forbidden_imagery": [
+  "robots humanoides de stock",
+  "cerebros brillantes y circuitos azules",
+  "billetes y dinero",
+  "gráficas de criptomonedas",
+  "exámenes o material protegido de la universidad",
+  "pantallas con datos personales de compañeros"
+ ],
+ "forbidden_imagery_en": [
+  "stock humanoid robots",
+  "glowing brains and blue circuits",
+  "cash and money",
+  "crypto charts",
+  "university exams or protected course material",
+  "screens with classmates personal data"
+ ],
+ "cta_library": "cta.md",
+ "asset_verdicts": null,
+ "approver": "Ale",
+ "account": "creator",
+ "music_policy": "do not burn in without a commercial license; pick the track in the app when publishing",
+ "memes_policy": "normal",
+ "inserts": {},
+ "brandbook": [],
+ "fonts_found": null,
+ "examples": [],
+ "derived": [],
+ "created": "2026-10-18",
+ "updated": "2026-10-18",
+ "last_used": null,
+ "forbidden_words": [
+  "hazte rico",
+  "dinero fácil",
+  "la IA te va a quitar el trabajo",
+  "10 herramientas que no conoces",
+  "truco secreto",
+  "garantizado",
+  "urgente",
+  "revolucionario"
+ ],
+ "cta": {
+  "site": null,
+  "handle": "@ale.ingenia",
+  "code_word": null
+ }
+}
